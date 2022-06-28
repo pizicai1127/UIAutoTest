@@ -1,0 +1,25 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Thu Oct 21 19:10:05 CST 2021","Thu Oct 21 19:10:44 CST 2021","39655","case.dynamic","test_login","TestLogin","","","test_login_wrong_account[chromium-data0]","
+        测试 使用错误账号登录。相同步骤不同参数测是，，在pro_account中填写不同场景测试数据
+
+        "
+"broken","Thu Oct 21 19:11:19 CST 2021","Thu Oct 21 19:11:52 CST 2021","32202","case.dynamic","test_login","TestLogin","","","test_login[chromium-data1]","
+         正常登录流程测试
+
+
+        "
+"passed","Thu Oct 21 19:10:45 CST 2021","Thu Oct 21 19:10:48 CST 2021","2844","case.dynamic","test_login","TestSignIn","","","test_sign_in_normal[chromium-data0]"," 测试 正常注册流程"
+"skipped","Thu Oct 21 19:09:22 CST 2021","Thu Oct 21 19:09:22 CST 2021","0","case.dynamic","test_sign_in","TestDynamic","","","test_03sign_in",""
+"broken","Thu Oct 21 19:10:48 CST 2021","Thu Oct 21 19:11:19 CST 2021","31176","case.dynamic","test_login","TestChangePassword","","","test_change_passwords[chromium-data0]","测试  修改密码 -正常流程"
+"passed","Thu Oct 21 19:09:22 CST 2021","Thu Oct 21 19:09:22 CST 2021","0","case.dynamic","test_sign_in","TestDynamic","","","test_02sign_in",""
+"broken","Thu Oct 21 19:09:25 CST 2021","Thu Oct 21 19:10:04 CST 2021","39606","case.dynamic","test_login","TestLogin","","","test_login[chromium-data0]","
+         正常登录流程测试
+
+
+        "
+"broken","Thu Oct 21 19:11:52 CST 2021","Thu Oct 21 19:12:24 CST 2021","32162","case.dynamic","test_login","TestLogin","","","test_login_wrong_account[chromium-data1]","
+        测试 使用错误账号登录。相同步骤不同参数测是，，在pro_account中填写不同场景测试数据
+
+        "
+"passed","Thu Oct 21 19:09:22 CST 2021","Thu Oct 21 19:09:22 CST 2021","0","case.dynamic","test_sign_in","TestDynamic","","","test_01sign_in",""
+"skipped","Thu Oct 21 19:09:22 CST 2021","Thu Oct 21 19:09:22 CST 2021","0","case.dynamic","test_sign_in","TestDynamic","","","test_04sign_in",""

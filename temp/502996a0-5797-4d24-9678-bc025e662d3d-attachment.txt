@@ -1,0 +1,18 @@
+INFO     common.logger:basepage.py:50 跳转到：https://asset-stage.tezign.com 
+INFO     common.logger:basepage.py:35 向页面元素[placeholder='邮箱/手机']中输入：liuzhijie@tezign.com
+INFO     common.logger:basepage.py:35 向页面元素input[type='password']中输入：111111
+INFO     common.logger:basepage.py:30 点击页面元素[type='checkbox']
+INFO     common.logger:basepage.py:30 点击页面元素button[type='submit']
+INFO     common.logger:basepage.py:50 跳转到：https://asset-stage.tezign.com/dam_enterprise/approved_list 
+INFO     common.logger:basepage.py:55 hover页面元素：[class='cache-route']>div>div>div:nth-child(2)>button
+INFO     common.logger:basepage.py:40 向页面元素[class='ant-dropdown ant-dropdown-placement-bottomRight']>ul>li:nth-child(1)>div>input中输入：/Users/tezign/PycharmProjects/tezign-watchmen/data/test_file_001.jpg
+INFO     common.logger:basepage.py:30 点击页面元素[class='status_completed_btn_box']>div:nth-child(4)
+INFO     common.logger:basepage.py:30 点击页面元素[class='ant-collapse-item ant-collapse-item-active']>div>div>div>div>div>div>div>div>div>div>div>div
+INFO     common.logger:basepage.py:30 点击页面元素[role='listbox']>li:nth-child(7)
+INFO     common.logger:basepage.py:30 点击页面元素[class='ant-modal-body']>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>button:nth-child(2)
+INFO     common.logger:basepage.py:55 hover页面元素：[class='ant-row']>div:nth-child(1)>div>div>div:nth-child(4)
+INFO     common.logger:basepage.py:30 点击页面元素[class='ant-row']>div>div>div>div:nth-child(3)>div
+INFO     common.logger:basepage.py:30 点击页面元素[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(2)>button
+INFO     common.logger:basepage.py:35 向页面元素[class='ant-input-affix-wrapper']>input中输入：more_重命名
+INFO     common.logger:basepage.py:30 点击页面元素[class='ant-modal-body']>div>div:nth-child(3)>div:nth-child(2)>button:nth-child(2)
+INFO     common.logger:basepage.py:45 获取页面元素span[class='message-text'] 中的文本内容

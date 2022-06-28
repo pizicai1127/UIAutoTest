@@ -1,0 +1,64 @@
+{
+  "scenarioName": "租户侧业务模块路由",
+  "steps": [
+    {
+      "case_name": "登录页",
+      "case_url": "/",
+      "assertions": {
+        "correct_except":"#user-portrait"
+      }
+    },
+     {
+      "case_name": "工作台路由",
+      "case_url": "/web/bi/stat/workbench",
+      "assertions": {
+        "correct_except":"#user-portrait"
+      }
+    },
+    {
+      "case_name": "素材库路由",
+      "case_url": "/dam_enterprise/approved_list",
+      "assertions": {
+        "correct_except":"#user-portrait"
+      }
+    }
+    ,
+     {
+      "case_name": "合规检测路由",
+      "case_url": "/detection/detect",
+      "assertions": {
+        "correct_except":"#user-portrait"
+      }
+    },
+    {
+      "case_name": "工作流路由",
+      "case_url": "/web/workflow/center/home",
+      "assertions": {
+        "correct_except":"div.ant-modal-content"
+      }
+    }
+    ,
+    {
+      "case_name": "内容中心路由",
+      "case_url": "/content/list/CONTENT_HUB_SOCIAL_CONTENT",
+      "assertions": {
+        "correct_except":"#user-portrait"
+      }
+    }
+    ,
+    {
+      "case_name": "智能创意路由",
+      "case_url": "/ai/template",
+      "assertions": {
+        "correct_except":"#user-portrait"
+      }
+    },
+    {
+      "case_name": "企业信息路由",
+      "case_url": "/base/company/setting-member",
+      "assertions": {
+        "correct_except":"#user-portrait"
+      }
+    }
+  ]
+    }

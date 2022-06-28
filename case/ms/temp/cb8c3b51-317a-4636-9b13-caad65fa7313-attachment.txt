@@ -1,0 +1,1 @@
+INFO     common.logger:basepage.py:51 获取页面元素//span[text()='需求名称'] 中的文本内容

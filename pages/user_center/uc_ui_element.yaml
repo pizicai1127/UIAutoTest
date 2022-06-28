@@ -1,0 +1,99 @@
+Uc_login_page_selectors:
+    #用户中心ui界面元素
+   password_tab: "div:nth-child(1) > div.ant-tabs-tab:nth-child(1)" #密码登录tab页按钮
+   username: "[placeholder='邮箱/手机']" # id.tezign.com登录页 -密码&验证码登录-账号输入框
+   password: "input[type='password']" # id.tezign.com登录页 -密码登录-密码输入框
+   click_policy : "[type='checkbox']" # id.tezign.com登录页 -密码登录-勾选（我已阅读并同意《用户协议》及隐私政策）
+   login_btn: "button[type='submit']" #id.tezign.com登录页 -密码登录-登录按钮
+   sign_tab : "div:nth-child(1) > div.ant-tabs-tab:nth-child(2)" #验证码登录tab页切换按钮
+   username_new : "form:nth-child(1) > div> div > input[placeholder='邮箱/手机']"
+
+Asset_login_page_selectors:
+   #租户-原始登录页ui元素
+   username : "#email"
+   password : "input#password"
+   checkbut : "p>label>span.ant-checkbox>input"
+   login_btn : "#uc_page"
+
+Uc_login_page_sso_selectors:
+   sso_icon: ".list_wrap___3qbGs > div > div:nth-child > div"
+
+
+Ding_login_page_selectors:
+   goto_login: "section.content > a:nth-child(1)"
+   input_phone: "#mobile"
+   input_pass : "#pwd"
+   login_btn: "#loginBtn"
+
+
+
+Asset_logout_selectors:
+  #租户-库组合并-退出登录ui元素
+   menu_btn: "#user-portrait"  # 系统用户头像按钮
+   logout_btn: "#user-portrait > div > div > div > div > div:last-child" # 退出登录按钮
+
+Old_loginout_selectors:
+   menu_btn: "#navbar-user-page-men" #系统用户头像按钮
+   logout_btn: "li.ant-menu-item.menu-item-qui" #退出登录按钮
+
+Workflow_page_selectors:
+   tz_video: "div.ant-modal-content"  # 工作流-新手引导元素
+   tz_video_btn: "div.ant-modal-content>div>div>button"  # 工作流-新手引导按钮我知道了
+
+
+Members_page_selectors:
+   add_member_btn: "span.m-add-memeber-btn > button:last-child" #添加用户按钮
+   add_one_btn: "ul > li:nth-child(1) > div > div" #添加用户-逐个添加按钮
+   add_bulk_btn: "ul > li:nth-child(2) > div > div"#添加用户-批量添加按钮
+   addmember_name : "div.addmember-name > div > input" #逐个添加用户弹窗-用户名输入框
+   addmember_email : "div.addmember-email > div > input"#逐个添加用户弹窗-邮箱输入框
+   addmember_phone : "div.addmember-phone > div > input"#逐个添加用户弹窗-手机号输入框
+   bulk_add_file_select : "div.file-select-box" #批量添加用户弹窗-选择上传文件模块
+   addmember_dept: "span.ant-select-selection__rendered > span"#添加用户弹窗-部门选择框
+   addmember_dept_select : "#rc-tree-select-list_1 > ul > li:nth-child(1) "#添加用户弹窗-选择单个部门
+   add_confirm_btn : "div.ant-modal-content > div.ant-modal-footer > div > button.tz-btn.type-primary.shape-round" #逐个添加用户弹窗-添加确认按钮
+   add_cancle_btn : "div.ant-modal-content > div.ant-modal-footer > div > button.tz-btn.type-neutral.shape-round.ghost-text"#逐个添加用户弹窗-取消确认按钮
+   search_input: "input.ant-input" #搜索用户输入框
+   more_btn : "tr > td:nth-child(5) > div > div > div > button:nth-child(2)" #更多操作按钮
+   edit_btn : "tr > td:nth-child(5) > div > div > div > button:nth-child(1)" #编辑按钮
+   edit_dialog_title : "#rcDialogTitle0" #编辑用户弹窗title
+   edit_confirm_btn : "div.ant-modal-content > div.ant-modal-footer > div > button.tz-btn.type-primary.shape-round" #编辑用户弹窗=确认按钮
+   edit_cancle_btn : "div.ant-modal-content > div.ant-modal-footer > div > button.tz-btn.type-neutral.shape-round.ghost-text" #编辑用户弹窗取消按钮
+   delete_btn : "ul > li:nth-child(4) > button" #注销按钮
+   delete_confirm_btn : "div.ant-modal-content > div.ant-modal-footer > div.foot-action.action-ok.type-danger" #注销确认按钮
+   delete_member_btn : ".m-add-memeber-btn-logout" #已注销成员按钮
+   delete_page_search_input : "input.ant-input" #已注销成员页面搜索框
+
+
+
+External_page_selectors:
+   add_member_btn: "div.spin-container > div:nth-child(1) > div:nth-child(2) > button" #添加外部用户按钮
+   add_one_btn: ".add-member>.deptm-memberadd" #添加外部用户-逐个添加按钮
+   add_bulk_btn: "ul > li:nth-child(2) > div > div"#添加外部用户-批量添加按钮
+   addmember_name: "div.ant-modal-content > div.ant-modal-body > div.addmember-external > div:nth-child(1) > div>input" #逐个添加外部用户弹窗-用户名输入框
+   addmember_email: "div.ant-modal-content > div.ant-modal-body > div.addmember-external > div:nth-child(2) > div>input"#逐个添加外部用户弹窗-邮箱输入框
+   addmember_phone: "div.ant-modal-content > div.ant-modal-body > div.addmember-external > div:nth-child(3) > div>input"#逐个添加外部用户弹窗-手机号输入框
+   bulk_add_file_select : "div.file-select-box" #批量添加用户弹窗-选择上传文件模块
+   addmember_auth_checkbox: "label > span.ant-checkbox.ant-checkbox-checked > input" #逐个添加外部用户弹窗-用户权限勾选框
+   addmember_dimension: "ul.ant-select-selection__rendered"#逐个添加外部用户弹窗-维度选择框
+   addmember_dimension_select_p: " ul > li:nth-child(1) > span.ant-select-tree-switcher"#逐个添加外部用户弹窗-点击第一个维度-自动化测试维度
+   admember_dimension_select_get : " ul > li.ant-select-tree-treenode-switcher-open > ul > li > span.ant-select-tree-checkbox > span" #逐个添加外部用户弹窗-点击第一个维度-自动化测试维度-测试子维度
+   not_init_checkbox : "div.form-modal-content > div > label.ant-checkbox-wrapper" ##逐个添加外部用户弹窗-权限-账户密码初始化取消勾选按钮
+   add_confirm_btn : "div.ant-modal-content > div.ant-modal-footer > div > button.tz-btn.type-primary.shape-round" ##逐个添加外部用户弹窗-确认按钮
+   add_success_box_close_btn : " div > div.ant-modal-content > div.ant-modal-footer"
+   search_dimension : "div.left > div.left-container > div > div > div> div> div > div > div.ant-select-selection__placeholder"  #搜索维度文本框
+   search_dimension_input: ".left > div.left-container > div > div > div> div> div > div > div> div > input" #维度输入框
+   search_input: "input.ant-input" #搜索用户输入框
+   edit_btn: "table > tbody > tr:nth-child(1) > td:nth-child(5)" #编辑按钮
+   edit_confirm_btn : "div > div.ant-modal-content > div.ant-modal-body > div > button.tz-btn.type-primary.shape-round" #编辑用户弹窗=确认按钮
+   more_btn : "table > tbody > tr:nth-child(1) > td:nth-child(5) > div > button" #更多操作按钮
+   delete_btn: "li.ant-dropdown-menu-item>i" #注销按钮
+   delete_confirm_btn: "div.ant-modal-content > div.ant-modal-footer > div.foot-action.action-ok.type-danger" #注销确认按钮
+
+
+
+
+
+
+
+

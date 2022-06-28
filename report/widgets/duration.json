@@ -1,0 +1,101 @@
+[ {
+  "uid" : "bd67435af7324ad",
+  "name" : "test_login_wrong_account[chromium-data0]",
+  "time" : {
+    "start" : 1634814605141,
+    "stop" : 1634814644796,
+    "duration" : 39655
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "9666368d47e441e2",
+  "name" : "test_login[chromium-data1]",
+  "time" : {
+    "start" : 1634814679819,
+    "stop" : 1634814712021,
+    "duration" : 32202
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "bc4c794592066a42",
+  "name" : "test_sign_in_normal[chromium-data0]",
+  "time" : {
+    "start" : 1634814645161,
+    "stop" : 1634814648005,
+    "duration" : 2844
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "35b0fc8486b3e07f",
+  "name" : "test_03sign_in",
+  "time" : {
+    "start" : 1634814562467,
+    "stop" : 1634814562467,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "5c95e1bb4293c01",
+  "name" : "test_change_passwords[chromium-data0]",
+  "time" : {
+    "start" : 1634814648281,
+    "stop" : 1634814679457,
+    "duration" : 31176
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "cb460dbfad93f6bd",
+  "name" : "test_02sign_in",
+  "time" : {
+    "start" : 1634814562469,
+    "stop" : 1634814562469,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "463bcd1a0aaf7a95",
+  "name" : "test_login[chromium-data0]",
+  "time" : {
+    "start" : 1634814565096,
+    "stop" : 1634814604702,
+    "duration" : 39606
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7c1c4c82fc22de33",
+  "name" : "test_login_wrong_account[chromium-data1]",
+  "time" : {
+    "start" : 1634814712585,
+    "stop" : 1634814744747,
+    "duration" : 32162
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "55ad6930a9f8ad7c",
+  "name" : "test_01sign_in",
+  "time" : {
+    "start" : 1634814562466,
+    "stop" : 1634814562466,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1533882ada3a083a",
+  "name" : "test_04sign_in",
+  "time" : {
+    "start" : 1634814562470,
+    "stop" : 1634814562470,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]

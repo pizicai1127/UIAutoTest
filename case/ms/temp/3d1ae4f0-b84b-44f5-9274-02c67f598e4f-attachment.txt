@@ -1,0 +1,2 @@
+INFO     common.logger:basepage.py:51 获取页面元素text = 订阅成功 中的文本内容
+INFO     common.logger:basepage.py:51 获取页面元素text = 已取消订阅 中的文本内容

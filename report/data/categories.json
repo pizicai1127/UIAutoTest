@@ -1,0 +1,82 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[class='input___RTOja']\"\n============================================================",
+      "children" : [ {
+        "name" : "test_login[chromium-data0]",
+        "uid" : "463bcd1a0aaf7a95",
+        "parentUid" : "0d18b7834a3615e899ba7a3ade002de2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634814565096,
+          "stop" : 1634814604702,
+          "duration" : 39606
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'chromium'", "{'login_page_url': 'https://vms-t2.tezign.com/user/login', 'account': 'tzvirtual1@tezign.com', 'password': 'qq111111'}" ]
+      }, {
+        "name" : "test_login_wrong_account[chromium-data0]",
+        "uid" : "bd67435af7324ad",
+        "parentUid" : "0d18b7834a3615e899ba7a3ade002de2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634814605141,
+          "stop" : 1634814644796,
+          "duration" : 39655
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'chromium'", "{'login_page_url': 'https://vms-t2.tezign.com/user/login', 'account': 'tzvirtual1@tezign.com', 'password': 'qq111111'}" ]
+      } ],
+      "uid" : "0d18b7834a3615e899ba7a3ade002de2"
+    }, {
+      "name" : "playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[id='email']\"\n============================================================",
+      "children" : [ {
+        "name" : "test_change_passwords[chromium-data0]",
+        "uid" : "5c95e1bb4293c01",
+        "parentUid" : "c3738ebf10491baf0f36a44e17617e1a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634814648281,
+          "stop" : 1634814679457,
+          "duration" : 31176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'chromium'", "{'setting_url': 'https://fmcgdemo.tezign.com/base/account/setting', 'original_password': 'abcd1234', 'new_password': 'abcd1234', 'confirm_password': 'abcd1234'}" ]
+      }, {
+        "name" : "test_login[chromium-data1]",
+        "uid" : "9666368d47e441e2",
+        "parentUid" : "c3738ebf10491baf0f36a44e17617e1a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634814679819,
+          "stop" : 1634814712021,
+          "duration" : 32202
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'chromium'", "{'login_page_url': 'https://id.tezign.com/login', 'account': 'wangcong@tezign.com', 'password': 'abcd1234'}" ]
+      }, {
+        "name" : "test_login_wrong_account[chromium-data1]",
+        "uid" : "7c1c4c82fc22de33",
+        "parentUid" : "c3738ebf10491baf0f36a44e17617e1a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1634814712585,
+          "stop" : 1634814744747,
+          "duration" : 32162
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'chromium'", "{'login_page_url': 'https://id.tezign.com/login', 'account': 'wangcong@tezign.com', 'password': 'abcd1234'}" ]
+      } ],
+      "uid" : "c3738ebf10491baf0f36a44e17617e1a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

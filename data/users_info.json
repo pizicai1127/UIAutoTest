@@ -1,0 +1,11 @@
+[
+        {
+            "tenant_url" : "https://asset-stage.tezign.com/user/login",
+            "account" : "yanglun@tezign.com",
+            "password" : "qq111111",
+            "pending_url" : "https://asset-stage.tezign.com/dam_enterprise/draft",
+            "assets_url" : "https://asset-stage.tezign.com/dam_enterprise/approved_list",
+            "all_collections_url" : "https://asset-stage.tezign.com/dam_enterprise/group"
+
+        }
+]

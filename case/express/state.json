@@ -1,0 +1,54 @@
+{
+  "cookies": [
+    {
+      "sameSite": "Lax",
+      "name": "_9755xjdesxxd_",
+      "value": "32",
+      "domain": "express.tezign.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "__snaker__id",
+      "value": "V9bvVSANIORn7NEb",
+      "domain": "express.tezign.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "vmsxtoken",
+      "value": "1b6fe1de68bded450d78f290d1810358",
+      "domain": "express.tezign.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "globalUserId",
+      "value": "1498501916393955328",
+      "domain": ".express.tezign.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false
+    },
+    {
+      "sameSite": "Lax",
+      "name": "vmsxuid",
+      "value": "151812",
+      "domain": ".express.tezign.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false
+    }
+  ]
+}

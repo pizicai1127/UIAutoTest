@@ -1,0 +1,2232 @@
+LoginPage:
+
+# 老登录页面 元素
+
+  account: "input[type='text']"  # 登录页 -账号输入框
+  password: "input[type='password']"  # 登录页-，密码输入框
+  checkbox: "p input[type=checkbox]"  # 登录页面-勾选（我已阅读并同意《用户协议》及隐私政策）
+  login_btn: "button:has-text('登录')"  # 登录页-登录按钮
+
+
+# 登录页 元素
+  account_new: "input[type='text']"  # 登录页 -账号输入框
+  password_new: "input[type='password']" # 登录页-，密码输入框
+  checkbox_new: "[type='checkbox']"  # 登录页面-勾选（我已阅读并同意《用户协议》及隐私政策）
+  login_btn_new: "button[type='submit']" # 登录页-登录按钮
+  login_info_success_new: "[id='root']>div>div>div:nth-child(3)>div"    #登陆成功信息
+
+## 登录页 元素
+#  account: "input[type='text']"  # 登录页 -账号输入框
+#  password: "input[type='password']" # 登录页-，密码输入框
+#  checkbox: "[type='checkbox']"  # 登录页面-勾选（我已阅读并同意《用户协议》及隐私政策）
+#  login_btn: "button[type='submit']" # 登录页-登录按钮
+
+# 注册页 元素
+  company_name: "input[type='text']"  # 注册页-企业名称  输入框
+  sign_in_email_number: "text=注册邮箱请输入公司邮箱 >> input[type='text']"  # 注册页-注册邮箱号  输入框
+  sign_in_password: "input[type='password']"  # 注册页-注册密码  输入框
+  sign_in_password_confirm: ":nth-match(input[type='password'], 2)"  # 注册确认密码 输入框
+  sign_in_contact_number: ":nth-match(input[type='text'], 3)"  # 注册页——联系人姓名 输入框
+  sign_in_checklist: "input[type='checkbox']" # 注册页-勾选供应商条款
+  sign_in_button: "text=注 册"  # 注册页-点击注册按钮
+
+HomePage:
+  contact_button: ".operation-btns___2MRKF :text('联系我们')"  # 联系我们按钮
+  Feedback_button: ":text('问题反馈')"  # 问题反馈按钮
+  Feedback_content: "#text-input___PnqVJ"  # 反馈内容
+  submit_button: "button.ant-btn.ant-btn-primary.operation-btn___1y3Hl"  # 提交按钮
+  submit_alert: ".ant-message" # 提交成功的提示
+  home: "[id='root']>div>div>div:nth-child(3)>div:nth-child(1)"    #首页元素
+  home_title: "head>title"    #首页标题
+  notice_close_button: "[class='ant-notification ant-notification-topRight']>span>div>a>span"   #公告-关闭按钮
+  home_my_join_items: "[class='participate-todoList']>div:nth-child(1)>div:nth-child(2)>div"    #跳转-我加入的项目
+  assert_my_join_items: "li[title='所有项目']"    #跳转"我加入的项目"成功断言
+  home_my_collection_groups: "[class='main_layout_container']>div:nth-child(2)>div>div>div>div>div:nth-child(10)>div>div>div:nth-child(3)"   #跳转-我收藏的素材组
+  home_my_collection_groups_assert: "[class='ant-tabs-tab-active ant-tabs-tab']"    #我收藏到素材断言
+  home_hot_materials: "[class='main_layout_container']>div:nth-child(2)>div>div>div>div>div:nth-child(5)>div>div>div:nth-child(4)"    #跳转-热门素材组
+  assert_hot_materials: "[id='material-content']>div>div>div>div:nth-child(2)>div>div>span"   #跳转"热门素材组"成功断言
+  home_hot_groups: "[class='main_layout_container']>div:nth-child(2)>div>div>div>div>div:nth-child(11)>div>div>div:nth-child(4)"    #跳转-热门素材组
+  assert_hot_groups: "[id='content']>div>div>div>div>div>div>span"   #跳转"热门素材组"成功断言
+  assert_recent_visits: "[class='main_layout_container']>div:nth-child(2)>div>div>div>div>div:nth-child(6)>div>div:nth-child(2)>div>div>div>div:nth-child(2)"    #"最近访问"断言
+  home_search_input: "[placeholder='测试文案']"    #首页-搜索输入框
+  first_material_name: "[class='ant-row']>div>div>div>div:nth-child(4)>span"   #第一个素材的名称
+  first_group_name: "[class='ant-row']>div>div>div:nth-child(2)"    #第一个素材组的名称
+  home_search_button: "button[class='tz-btn css-qbwcmg type-primary shape-round']"    #首页-搜索按钮
+  home_search_material_tab: "[class='ant-popover-inner-content']>div>div>div>div>div>div>div>div>div:nth-child(2)"    #素材搜索tab
+  home_search_group_tab: "[class='ant-popover-inner-content']>div>div>div>div>div>div>div>div>div:nth-child(3)"   #素材组搜索tab
+  asset_search_input: "[placeholder='请输入素材名称']"   #素材库-搜索输入框
+  group_search_input: "[placeholder='输入素材或素材组名称']"    #素材组-搜索输入框
+  homepage_project_1: "[class='participate-todoList']>div:nth-child(1)>div:nth-child(2)>div"   #我加入的项目-项目1
+  homepage_my_filters: "//span[text()='首页跳转-我的筛选项']"   #我的筛选项
+  homepage_my_filters_assert: "[class='cache-route']>div>div>div:nth-child(3)>div:nth-child(2)>div>span"    #我的筛选项-断言
+
+
+
+MaterialGroupPage:
+  company-pic: "[class='icon-mask']"
+  into_group: "._3jLs_>div>div:nth-child(3)>div>div>div"
+  navbar_title: "[test-id = 'TAB_DAM_APPROVED_LIST']"
+  add_Materialgroup_button: ".layout_userlist_button"
+  group_name_input: "[id='groupName']"
+  group_description_input: "[id='description']"
+  button: "[class='tz-btn ml-20 type-primary shape-round']"
+  ...: "i[class='anticon layout_drop_declear_icon']>svg"
+  group_delete_button: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(5)"
+  confirm_delete_button : "div[class='foot-action action-ok type-danger']"
+
+
+AssetPage:
+  message_text_assert: "span[class='message-text']"   #提示
+  notice_close_button: "[class='ant-notification ant-notification-topRight']>span>div>a>span"   #公告-关闭按钮
+  all_group_names: "[class='ant-row']>div>div>div:nth-child(2)"   #所有素材组名称-我收藏的
+  asset_name_first: "[class='ant-row']>div:nth-child(1)>div>div>div:nth-child(4)"    #素材名称（第一个）
+  asset_name_first_hover: "[class='ant-row']>div:nth-child(1)>div>div"    #素材名称（第一个）hover
+  search_group_name_first: "[class='ant-row']>div:nth-child(1)>div>div:nth-child(3)"   #全部素材下，搜索后的第一个素材组名称
+  asset_name_second: "[id='material-content']>div>div>div:nth-child(2)>div:nth-child(2)>div>div>div:nth-child(4)"    #素材名称（第二个）
+  asset_style_label: "[class='ant-row']>div:nth-child(1)>div>div>div:nth-child(5)>span:nth-child(1)>span"   #素材的标签
+  asset_is_selected: "[id='material-content']>div>div>div:nth-child(2)>div>div>div>div"   #选中状态
+  download_pack_success: "[class='fw-bold']"   #打包下载成功
+  upload_button: "[class='cache-route']>div>div>div:nth-child(2)>button"    #上传文件按钮（点击）
+  upload_file_button: "[class='ant-dropdown ant-dropdown-placement-bottomRight']>ul>li:nth-child(1)>div>button"   #上传文件按钮
+  upload_file_button_input: "[class='ant-dropdown ant-dropdown-placement-bottomRight']>ul>li:nth-child(1)>div>input"    #上传文件按钮
+  asset_keep_both_button: "button[class='tz-btn type-primary shape-round ghost-solid']"   #入库重复-保留两者
+  add_to_asset_button: "div[class='status_completed_immediately_btn']"    # 立即入库按钮
+  upload_asset_permission_input: "[class='ant-collapse-item ant-collapse-item-active']>div>div>div>div>div>div>div>div>div>div>div>div"    # 素材权限范围输入框
+  upload_asset_permission_custom_select: "[role='listbox']>li:nth-child(7)"    #"自定义权限"选项
+  add_to_asset_choice_button: "[class='ant-modal-body']>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>button:nth-child(2)"   #入库所选按钮
+  upload_success: "span[class='message-text']"   #上传成功（断言）
+  upload_folder_button: "[class='ant-dropdown ant-dropdown-placement-bottomRight']>ul>li:nth-child(2)>div>input"   #上传文件夹按钮
+  baidu_transfer_button: "div[class='ant-dropdown ant-dropdown-placement-bottomRight']>ul>li:nth-child(3)"   #百度网盘导入夹按钮
+  muse_transfer_button: "div[class='ant-dropdown ant-dropdown-placement-bottomRight']>ul>li:nth-child(4)"   #MUSE导入夹按钮
+  transfer_input: "[id='link-Validate-form_shareUrl']"    #百度网盘/MUSE链接输入框
+  transfer_password_input: "[id='link-Validate-form_password']"    #百度网盘/MUSE提取密码输入框
+  transfer_import_button: "button[class='tz-btn ml-12 type-primary shape-round']"   #百度网盘/MUSE立即导入按钮
+  upload_url_button: "div[class='ant-dropdown ant-dropdown-placement-bottomRight']>ul>li:nth-child(6)"   #导入网页按钮
+  url_input: "input[placeholder='https://']"   #导入网页输入框
+  url_save_button: "[class='ant-modal-body']>div:nth-child(3)>div:nth-child(2)>div>button:nth-of-type(3)"   #导入网页保存按钮
+  upload_articles_button: "div[class='ant-dropdown ant-dropdown-placement-bottomRight']>ul>li:nth-child(8)"   #新建文章按钮
+  create_text_button: "[role='menu']>li:nth-of-type(7)>button"    #创建纯文本按钮
+  text_input: "[class='textarea-wrap']>textarea"    #文本输入
+  text_save_button: "[class='ant-modal-body']>div:nth-child(3)>div:nth-child(2)>div>button:nth-child(3)"    #保存并入库按钮
+  asset_search_input: "[class='ant-input']"   #搜索框
+  asset_search_result: "[class='ant-row']>div>div>div>div:nth-child(4)"   #搜索结果
+  asset_tile_mode: "[class='ant-radio-button-wrapper ant-radio-button-wrapper-checked']"   #平铺按钮
+  asset_tile_mode_assert: "[class='ant-table-thead']>tr>th:nth-child(2)>span>div>span"   #平铺模式断言
+  asset_list_mode: "[class='ant-radio-button-wrapper']"    #列表按钮
+  asset_list_mode_assert: "[class='ant-table-thead']>tr>th:nth-child(2)>span>div>span"    #列表模式断言
+  asset_sort_button: "[id='material-content']>div>div>div>div>div>div"    #排序按钮
+  update_time_sort: "div[class='drop-select-wrap']>div:nth-child(1)>div"    #更新时间
+  update_time_sort_assert: "div[class='drop-select-wrap']>div:nth-child(1)>div>span"   #更新时间断言
+  recently_opened_sort: "div[class='drop-select-wrap']>div:nth-child(2)"    #最近打开
+  recently_opened_sort_assert: "div[class='drop-select-wrap']>div:nth-child(2)>div>span"    #最近打开断言
+  material_heat_sort: "div[class='drop-select-wrap']>div:nth-child(3)"    #素材热度
+  material_heat_sort_assert: "div[class='drop-select-wrap']>div:nth-child(3)>div>span"    #素材热度断言
+  history_total_activity_sort: "div[class='drop-select-wrap']>div:nth-child(4)"    #历史总活跃
+  history_total_activity_sort_assert: "div[class='drop-select-wrap']>div:nth-child(4)>div>span"    #历史总活跃断言
+  material_name_sort: "div[class='drop-select-wrap']>div:nth-child(5)"    #素材名称
+  material_name_sort_assert: "div[class='drop-select-wrap']>div:nth-child(5)>div>span"    #素材名称断言
+  create_time_sort: "div[class='drop-select-wrap']>div:nth-child(6)"    #创建时间
+  create_time_sort_assert: "div[class='drop-select-wrap']>div:nth-child(6)>div>span"    #创建时间断言
+  file_size_sort: "div[class='drop-select-wrap']>div:nth-child(7)"    #文件大小
+  file_size_sort_assert: "div[class='drop-select-wrap']>div:nth-child(7)>div>span"    #文件大小断言
+  basket_title: "[title='1']"   #素材篮数量（1个）
+  join_basket_success: "[class='ant-scroll-number-only-unit current']"    #加入素材篮成功
+  asset_search_similar_pic_button: "div[class='ant-row']>div>div>div>div:nth-child(3)>span:nth-child(1)"    #查找相似图
+  asset_search_similar_pic_color_button: "[class='ant-radio-wrapper ant-radio-wrapper-checked']>span:nth-child(2)"    #查找色彩相似的图片
+  asset_search_similar_pic_empty_button: "[aria-label='icon-delete']"    #相似图-清空搜索
+  asset_search_similar_pic_close_button: "[data-icon='icon-close']"   #关闭以图搜图
+  asset_add_to_asset_basket_button: "div[class='ant-row']>div>div>div>div:nth-child(3)>span:nth-child(2)"    #加入素材篮
+  asset_all_selected_not: "[class='_16o1y ant-checkbox-wrapper']"   #全选_未选中
+  asset_all_selected: "[class='_16o1y ant-checkbox-wrapper ant-checkbox-wrapper-checked']"   #全选_选中
+  asset_selected_hover: "[id='material-content']>div>div>div>div"    #hover上素材
+  asset_batch_button: "[class='ant-row']>div>div>div>div>i>svg"    #多选按钮-第一个
+  asset_batch_download: "[class='cache-route']>div>div:nth-child(2)>div>div"   #批量下载按钮
+  asset_batch_download_button: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li"   #上拉-批量下载按钮
+  asset_batch_download_all_button: "body>div:nth-of-type(7)>div>div>ul>li:nth-child(2)"    #上拉-批量下载素材及附件按钮
+  asset_batch_share: "[class='cache-route']>div>div:nth-child(2)>div>div:nth-child(2)"   #批量分享按钮
+  asset_batch_share_create_link_button: "[class='ant-modal-body']>div>div>div:nth-child(2)>div>div>button"   #批量分享-创建链接
+  asset_batch_edit: "[class='cache-route']>div>div:nth-child(2)>div>div:nth-child(4)"   #批量编辑按钮
+  asset_detail_tab_details: "[class='ant-modal-body']>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div>div>div>div>div:nth-child(1)>div:nth-child(1)>div"    #Tab-详情
+  detail_edit_name_input: "[placeholder='请填写素材名称']"   #编辑-名称
+  detail_edit_save_button: "[test-id='DAM_UPDATE_SINGLE']"    #编辑-保存按钮
+  asset_batch_more: "[class='cache-route']>div>div:nth-child(2)>div>div:nth-child(12)"   #批量。。。按钮
+  asset_batch_rename: "[class='cache-route']>div>div:nth-child(2)>div>div:nth-child(5)"   #批量重命名按钮
+  rename_input: "[class='ant-input-affix-wrapper']>input"   #重命名输入框
+  rename_button: "[class='tz-btn type-primary shape-round size-middle']"    #重命名按钮
+  rename_confirm_button: "[class='tz-btn type-primary shape-round size-small']"   #重命名确认按钮
+  asset_batch_add_to_group: "[class='cache-route']>div>div:nth-child(2)>div>div:nth-child(7)"   #批量添加到组按钮
+  asset_batch_add_to_group_check: "//span[text()='全部']"    #批量添加到组输入前判断
+  add_to_group_search_input: "//div[@class='ant-modal-body']//input[@class='ant-select-search__field']"    #添加到组-搜索框
+  add_to_group_build: "[class='tz-btn display-flex flex-align-items-center type-primary shape-round ghost-text']"   #添加到组-新建素材组
+  add_to_group_build_name_input: "[placeholder='输入素材组的名称']"    #添加到组-新建素材组-输入框
+  add_to_group_build_confirm_button: "[class='tz-btn type-primary shape-circle size-xs icon-button']"    #添加到组-新建素材组-确定✅️
+  add_to_group_search_result_one: "[role='listbox']>li"   #添加到组-选择第一个搜索结果
+  add_to_group_search_confirm_button: "[class='ant-modal-body']>div>div:nth-child(6)>button:nth-of-type(3)"    #添加到组-确定按钮
+  more_add_to_group_search_confirm_button: "[class='ant-modal-body']>div>div:nth-child(6)>button:nth-of-type(3)"    #添加到组-确定按钮
+  asset_batch_add_to_basket: "[class='cache-route']>div>div:nth-child(2)>div>div:nth-child(9)"   #批量加入素材篮按钮
+  asset_more_button: "[class='ant-row']>div>div>div>div:nth-child(3)>div"   #右键。。。菜单按钮
+  asset_more_delete_button: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(10)>button"    #右键菜单里的删除按钮（素材）
+  content_more_delete_button: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(9)>button"    #右键菜单里的删除按钮（内容）
+  content_text_more_delete_button: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(10)>button"    #右键菜单里的删除按钮(纯文本)
+  asset_batch_delete: "[id='root']>div>div:nth-child(2)>div:nth-child(4)>div>div>div:nth-child(2)>div>div:nth-child(10)"   #批量删除按钮
+  delete_secondary_confirmation_button: "[class='ant-modal-footer']>div:nth-child(2)"   #删除-二次确认按钮
+  delete_info_success: "[class='tz-message type-success visible']>div>span"    #删除成功提示
+  asset_filters_creator: "[class='cache-route']>div>div>div:nth-child(3)>div:nth-child(2)>div>span"    #创建者/创建部门
+  asset_filters_creator_self: "[class='ant-dropdown metail-filter-dropdown-list ant-dropdown-placement-bottomLeft']>div>div>div>div:nth-child(1)>label>span:nth-child(1)>input"   #我创建的素材
+  asset_result_no_material: "[class='ant-empty-description']"   #暂无素材
+  asset_saved_filters_hover: "[class='cache-route']>div>div>div:nth-child(3)>div>div:nth-child(2)>div>span"   #常用筛选hover
+  asset_saved_filters_save_button: "[class='ant-dropdown-menu-item']"   #保存为常用筛选按钮
+  asset_common_filters_name_hover: "[class='ant-dropdown-menu-item']>div>span"   #常用筛选项（第一个）
+  asset_common_filters_delete_button: "[class='ant-dropdown-menu-item ant-dropdown-menu-item-active']>div>i>svg>path"   #常用筛选清除
+  asset_saved_filters_name_input: "[class='ant-input-affix-wrapper']>input"   #常用筛选名称输入
+  asset_saved_filters_confirm_button: "[class='foot-action action-ok type-primary']"    #常用筛选确定按钮
+  asset_filters_brand: "[class='cache-route']>div>div>div:nth-child(3)>div:nth-child(3)>div>span"   #筛选-品牌
+  asset_filters_brand_input: "[class='ant-select-search__field__placeholder']"  #筛选-品牌
+  asset_filters_brand_first_select: "[title='Tezign 特赞']"  #筛选-品牌-特赞
+  asset_filters_file_format: "[class='cache-route']>div>div>div:nth-child(3)>div:nth-child(4)>div>span"   #筛选-文件格式
+  asset_filters_file_format_picture_select: "[class='ant-dropdown metail-filter-dropdown-list ant-dropdown-placement-bottomLeft']>div>div>div>div:nth-child(1)>div:nth-child(1)>span>label>span:nth-child(1)>input"    #勾选图片选项
+  asset_filters_file_format_picture: "[class='ant-collapse ant-collapse-icon-position-left margin-left-0 margin-right-0 check-list-groups']>div:nth-child(1)>div>i"   #筛选-文件格式-图片->
+  asset_filters_file_format_picture_JPG: "[class='ant-collapse-content-box']>div>div:nth-child(1)>div>label>span:nth-child(1)>input"   #筛选-文件格式-图片-JPG格式
+  asset_filters_creation_time:  "[class='cache-route']>div>div>div:nth-child(3)>div:nth-child(10)>div>span"    #筛选-创建时间
+  asset_filters_creation_time_today:  "[class='ant-radio-input'][value='1']"    #筛选-创建时间-今天
+  asset_filters_picture_main_color: "[class='cache-route']>div>div>div:nth-child(3)>div:nth-child(15)>div>span"    #筛选-图片主色
+  asset_filters_picture_main_color_red: "li[style='background-color: rgb(232, 58, 48);']"    #筛选-图片主色-红色
+  asset_filters_checkbox: "[class='cache-route']>div>div>div:nth-child(3)>div:nth-child(18)>div>span"    #筛选-复选框
+  asset_filters_checkbox_input: "body>div:nth-of-type(9)>div>div>div>div>div>div>div>div>ul>li>div>input"    #筛选-复选框-输入
+  asset_filters_checkbox_1: "body>div:nth-of-type(9)>div>div>div>div>div:nth-child(2)>div>div>div>ul>li:nth-child(1)>span:nth-child(2)>span>div>div:nth-child(1)"   #筛选-复选框-1
+  asset_filters_star_label: "[class='cache-route']>div>div>div:nth-child(3)>div:nth-child(22)>div>span"    #筛选-明星标签
+  asset_filters_star_label_YY_input: "[class='mb-12 tui-select-wrap']>div>div>div>ul>li>div>input"    #筛选-明星标签-输入杨幂
+  asset_filters_star_label_YY_button: "[class='ant-select-dropdown-menu-item']"    #筛选-明星标签-杨幂选项
+  asset_bell_button: "[id='root']>div>div>div:nth-child(2)>div:nth-child(2)>div>div>span"   #小铃铛按钮
+  bell_list_open_success: "[class='ant-tabs-tab-active ant-tabs-tab']"    #打开小铃铛列表成功
+  asset_all_read_button: "[class='material-badge-wrap-mark-read']"   #全部标为已读按钮
+  asset_more_rename_button: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(2)>button"    #   右键-重命名按钮
+  asset_more_rename_input: "[class='ant-input-affix-wrapper']>input"    #重命名-输入框
+  asset_more_rename_confirm_button: "[class='ant-modal-body']>div>div:nth-child(3)>div:nth-child(2)>button:nth-child(2)"   #重命名-确认按钮
+  asset_more_edit_button: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(3)>button"    #右键-编辑按钮
+  asset_more_edit_describe_input: "[test-id='CORE_DESCRIPTION']"   #编辑-描述输入框
+  asset_more_edit_save_button: "[test-id='DAM_UPDATE_SINGLE']"   #编辑-保存按钮
+  asset_more_download_button: "[class='ant-dropdown-menu-submenu-title']>button"    #右键-下载按钮
+  asset_more_download_select: "[class='ant-dropdown-menu ant-dropdown-menu-sub ant-dropdown-menu-vertical']>li:nth-child(1)>button"    #下载-下载选项
+  asset_more_download_designated_size_select: "[class='ant-dropdown-menu ant-dropdown-menu-sub ant-dropdown-menu-vertical']>li:nth-child(2)>button"    #下载-下载指定尺寸和大小选项
+  asset_more_download_designated_size_input: "[class='tui-input-wrap with-suffix']>input"   #下载指定尺寸和大小-输入框
+  asset_more_download_designated_size_button: "[class='tz-btn type-primary shape-round']"    #下载指定尺寸和大小-下载按钮
+  asset_more_share_button: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(5)>button"   #右键-分享按钮
+  asset_more_share_create_link_button: "[class='tui-input-suffix']>button"    #分享弹窗-创建链接按钮
+  asset_more_share_close_button: "[class='ant-modal-close']"   #分享弹窗-关闭按钮
+  asset_more_add_to_group: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(6)>button"   #右键-添加到组按钮
+  asset_more_add_to_asset_basket_button: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(7)>button"   #右键-加入素材篮按钮
+  asset_more_specs_export_button: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(7)>button"    #右键-导出Specs按钮
+  asset_more_reset_the_owner_button: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(8)>button"   #右键-修改所有者按钮
+  asset_more_reset_the_owner_click: "[class='ant-modal-body']>div>div>div>div>div>div:nth-child(1)"    #修改所有者输入框（点击）
+  asset_more_reset_the_owner_input: "[class='ant-modal-body']>div>div>div>div>div>div:nth-child(2)>div>input"    #修改所有者输入框
+  asset_more_reset_the_owner_select: "[role='listbox']>li>span"   #修改所有者-搜索结果选择项
+  asset_more_reset_the_owner_confirm_button: "[class='ant-modal-body']>div>div:nth-child(2)>button:nth-child(2)"   #修改所有者确认按钮
+  asset_more_modify_category_button: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(9)>button"   #右键-修改权限类型按钮
+  asset_more_modify_category_input: "[class='ant-modal-body']>div>div>div>div>div"    #修改权限类型-输入框（点击）
+  asset_more_modify_category_custom_select: "[role='listbox']>li:nth-child(7)"    #修改权限类型-自定义选择
+  asset_more_modify_category_save_button: "[class='tz-btn type-primary shape-round']"   #修改权限类型-确认按钮
+  asset_all_group_add_button: "[aria-label='icon-add-plus-sec']"    # 全部素材组-+号
+  group_name_input: "[id='groupName']"    #新建素材组-素材组名称输入
+  group_save_button: "[class='text-right']>button:nth-child(2)"   # 新建素材组-保存按钮
+  article_iframe1: "[id='iframe-content-center']"   #iframe1
+  article_iframe2: "[id='ueditor_0']"   #iframe2
+  articles_input: "[[class='ueditor-placeholder ']]"  #文章输入框
+  articles_save_button: "[class='ant-modal-body']>div>div:nth-child(1)>div:nth-child(2)>button:nth-child(2)"    #保存并入库按钮
+
+# 内容详情页
+ContentDetailPage:
+  message_text_assert: "[class='message-text']"   #提示
+  notice_close_button: "[class='ant-notification ant-notification-topRight']>span>div>a>span"   #公告-关闭按钮
+  asset_name_first: "[class='ant-row']>div:nth-child(1)>div>div>div:nth-child(4)"    #素材名称（第一个）
+  asset_text_first_hover: "[class='ant-row']>div:nth-child(1)>div>div>div:nth-child(6)"    #素材名称（第一个）hover
+  detail_tab_assert: "[class='ant-tabs-tab-active ant-tabs-tab']>div"   #Tab-断言
+  detail_tab_details: "[class='ant-modal-body']>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div>div>div>div>div:nth-child(1)>div:nth-child(1)"    #Tab-详情
+  detail_tab_comments: "//div[text()='评论']"   #Tab-评论
+  detail_tab_logs: "[class=' ant-tabs-tab'][style='margin-right: 0px;']>div"   #Tab-log
+  detail_share_button: "//button[text()='分享']"   #分享按钮
+  share_create_link_button: "[class='tui-input-wrap with-suffix disabled']>div>button"    #分享弹窗-创建链接按钮
+  share_success_assert: "[class='tui-input-wrap with-suffix disabled']>div>span>button"   #分享成功断言
+  share_close_button: "[class='ant-modal-close']"    #分享-关闭按钮
+  detail_edit_button: "[class='tz-btn type-primary shape-square ghost-solid icon-button']"    #编辑按钮
+  edit_name_input: "input[test-id='CORE_NAME']"   #编辑-名称
+  edit_brand_input: "[test-id='CORE_BRAND']>div>div>div>div>div"   #编辑-品牌
+  edit_brand_result_one: "[role='listbox']>li"   #编辑-品牌-第一个结果
+  edit_save_button: "[test-id='DAM_UPDATE_SINGLE']"    #编辑-保存按钮
+  detail_more_button: "[class='tz-btn ant-dropdown-trigger type-primary shape-square ghost-solid']"    # "..."按钮
+  detail_add_button: "[class='ant-dropdown ant-dropdown-placement-topRight']>div>button:nth-child(1)"   #添加到组
+  add_to_group_search_input: "[class='ant-select-search__field']"    #添加到组搜索框
+  add_to_group_search_result_one: "[role='listbox']>li"   #添加到组-选择第一个搜索结果
+  add_to_group_search_confirm_button: "//button[text()='确定']"    #添加到组-确定按钮
+  add_to_group_build_button: "[class='tz-btn display-flex flex-align-items-center type-primary shape-round ghost-text']"    #添加到组-新建素材组按钮
+  add_to_group_build_name_input: "[class='ant-modal-body']>div>div:nth-child(4)>div>div>ul>li>ul>li>span:nth-child(2)>span>div>input"    #添加到组-新建素材组-输入框
+  add_to_group_build_confirm_button: "[class='tz-btn type-primary shape-circle size-xs icon-button']"    #添加到组-新建素材组-确定✅️
+  detail_upper_right_button: "//div[text()='添加到组']"   #添加到组-右上角入口按钮
+  detail_upper_right_group_button: "[class='gallery-head']>div>div:nth-child(2)>div:nth-child(1)>div>div>div>span"   #添加到组-右上角素材组按钮
+  detail_upper_right_group_result_first_select: "[class='ant-popover ant-popover-placement-bottom']>div>div:nth-child(2)>div>div>div>div:nth-child(1)>span>div>div>span"    #添加到组-右上角素材组hover结果第一个
+  detail_upper_right_group_result_first_select_delete_button: "[class='ant-popover ant-popover-placement-bottom']>div>div:nth-child(2)>div>div>div>div:nth-child(1)>span>div>i>svg"   ##添加到组-右上角素材组hover结果第一个删除按钮
+  detail_upper_right_group_result_first_select_delete_confirm_button: "[class='foot-action action-ok type-danger']"    #移除组确认按钮
+  detail_submit_error_button: "[fill='none']"    #提交错误按钮
+  detail_copy_url_button: "[class='anticon anticon-icon-copy']"    #复制链接按钮
+  detail_open_url_button: "[class='anticon anticon-icon-world']"    #在浏览器打开按钮
+  open_url_success: "[id='su']"   #打开浏览器成功
+  detail_delete_button: "[class='ant-dropdown ant-dropdown-placement-topRight']>div>button:nth-child(2)"    #删除按钮
+  detail_delete_confirm_button: "[class='foot-action action-ok type-danger']"    #二次确认删除
+  detail_comment_input: "[class='notranslate public-DraftEditor-content']"    #评论-输入框
+  detail_comment_send_button: "[class='tz-btn type-primary shape-round']"    #评论-发送按钮
+  detail-comment_success_assert: "[class='comment-content tz-editor-preview']>p"   #评论-成功断言
+  detail_logs_success: "[id='materil-detail-right']>div>div>div:nth-child(2)>div:nth-child(2)>div"   #log打印成功
+  detail_copy_full_text_button: "[class='tz-btn type-neutral shape-round ghost-solid']"    #复制全文按钮
+  detail_edit_text_button: "[id='tz-preview-file-wrap-id']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>button"   #文本-编辑按钮
+  detail_edit_text_input: "[placeholder='请输入正文']"    #文本-输入框
+  detail_edit_text_save_button: "[class='tz-btn type-primary shape-round']"    #文本-保存更新按钮
+  detail_edit_text_success_assert: "[class='ant-input ant-input-disabled']"   #文本-保存成功断言
+
+
+
+AssetDetailPage:
+  message_text_assert: "[class='message-text']"   #提示
+  notice_close_button: "[class='ant-notification ant-notification-topRight']>span>div>a>span"   #公告-关闭按钮
+  asset_name_first: "[class='ant-row']>div:nth-child(1)>div>div>div:nth-child(4)"    #素材名称（第一个）
+  asset_name_first_hover: "[class='ant-row']>div:nth-child(1)>div>div"    #素材名称（第一个）hover
+  detail_download_button: "[class='ant-btn ant-btn-primary']"   #下载按钮
+  detail_download_success: "body>iframe[class]"   #下载成功
+  detail_download_more_button: "[class='ant-btn ant-dropdown-trigger ant-btn-primary']"    #下载边上。。。按钮
+  detail_download_all_button: "[class='ant-dropdown ant-dropdown-placement-topRight']>div>button:nth-child(2)"    #下载素材带附件按钮
+  detail_download_designated_size_button: "//button[@class='tz-btn type-neutral shape-round'][2]"    #下载指定尺寸或大小按钮
+  detail_download_designated_size_confirm_button: "body>div:nth-of-type(7)>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-child(3)>div>div:nth-child(6)>div:nth-child(2)>button:nth-child(2)"    #下载指定尺寸或大小确定按钮
+  detail_download_designated_size_success: "[class='ant-modal tui-modal modal-fixed-close-btn']>div:nth-child(2)>div>div>div>div:nth-child(2)>div"   #下载指定尺寸或大小成功
+  detail_share_button: "//button[text()='分享']"   #分享按钮
+  detail_share_create_link_button: "[class='tui-input-wrap with-suffix disabled']>div>button"    #分享弹窗-创建链接按钮
+  detail_share_close_button: "body>div:nth-of-type(8)>div>div:nth-child(2)>div>div:nth-child(2)>button"    #分享-关闭按钮
+  main_detail_share_close_button: "button[class='ant-modal-close']"    #分享-关闭按钮（Main）
+  detail_edit_button: "[id='materil-detail-right']>div>div:nth-child(2)>button:nth-of-type(2)"    #编辑按钮
+  detail_edit_name_input: "input[test-id='CORE_NAME']"   #编辑-名称
+  detail_edit_brand_input: "[test-id='CORE_BRAND']>div>div>div>div>div"   #编辑-品牌
+  detail_edit_brand_result_one: "[role='listbox']>li"   #编辑-品牌-第一个结果
+  detail_edit_save_button: "[test-id='DAM_UPDATE_SINGLE']"    #编辑-保存按钮
+  detail_more_button: "[shape='square']:nth-of-type(3)"    #拐角。。。按钮
+  detail_add_button: "[class='ant-dropdown ant-dropdown-placement-topRight']>div>button:nth-child(1)"   #添加到组
+  add_to_group_search_input: "[class='ant-select-search__field']"    #添加到组搜索框
+  add_to_group_search_result_one: "[role='listbox']>li"   #添加到组-选择第一个搜索结果
+  add_to_group_search_confirm_button: "//button[text()='确定']"    #添加到组-确定按钮
+  detail_delete_button: "[class='ant-dropdown ant-dropdown-placement-topRight']>div>button:nth-child(2)"    #删除
+  delete_secondary_confirmation_button: "[class='foot-action action-ok type-danger']"   #删除-二次确认按钮
+  delete_info_success: "[class='tz-message type-success visible']>div>span"    #删除成功提示
+  detail_tab_details: "//div[text()='详情']"   #详情tab
+  detail_tab_intelligent_identification: "[class='ant-modal-body']>div:nth-child(2)>div:nth-child(2)>div>div>div:nth-child(2)>div>div>div>div>div:nth-child(2)>div"   #智能识别tab
+  detail_tab_comments: "[class='ant-modal-body']>div:nth-child(2)>div:nth-child(2)>div>div>div:nth-child(2)>div>div>div>div>div:nth-child(3)>div"   #评论tab
+  detail_tab_logs: "[class='ant-modal-body']>div:nth-child(2)>div:nth-child(2)>div>div>div:nth-child(2)>div>div>div>div>div:nth-child(4)>div"   #日志tab
+  detail_format_export_button: "[class='ant-dropdown ant-dropdown-placement-topRight']>div>button"   #格式导出按钮
+  detail_format_export_confirm_button: "[class='footer-inner']>button:nth-child(3)"   #格式导出确认按钮
+  detail_tab_export_format_success: "//button[text()='下载到本地']"   #格式转换成功
+  detail_tab_export_format_success_assert: "[id='tz-preview-container-id']>div:nth-child(3)>div>div:nth-child(1)"   #格式转换成功断言
+  detail_tab_export_format_cancel: "[class='tz-preview-container']>div:nth-child(3)>div>div:nth-child(2)>button:nth-child(1)"    #格式转换取消
+  detail_add_to_group_build: "[class='tz-btn display-flex flex-align-items-center type-primary shape-round ghost-text']"    #添加到组-新建素材组按钮
+  detail_add_to_group_build_name_input: "[class='ant-modal-body']>div>div:nth-child(4)>div>div>ul>li>ul>li>span:nth-child(2)>span>div>input"    #添加到组-新建素材组-输入框
+  detail_add_to_group_build_confirm_button: "[class='tz-btn type-primary shape-circle size-xs icon-button']"    #添加到组-新建素材组-确定✅️
+  detail_add_to_group_search_result_one: "[role='listbox']>li"   #添加到组-选择第一个搜索结果
+  detail_upload_enclosure_button: "[class='uploader']>div>input[class='input-wrap']"    #上传附件按钮
+  detail_enclosure_preview_button: "[class='flex-shrink-0 btn-group-line']>button"   #附件预览按钮
+  detail_enclosure_download_button: "[class='flex-shrink-0 btn-group-line']>button:nth-child(2)"    #附件下载按钮
+  detail_enclosure_set_preview_version_button:  "[class='flex-shrink-0 btn-group-line']>button:nth-child(3)"    #附件设为预览版本按钮
+  detail_enclosure_delete_button: "[class='flex-shrink-0 btn-group-line']>button:nth-child(4)"    #附件删除按钮
+  detail_enclosure_delete_confirm_button: "[class='foot-action action-ok type-danger']"    #附件删除二次确认按钮
+  detail_enclosure_delete_success: "[class='text-ellipsis']"    #附件删除断言
+  detail_upload_enclosure_name: "[class='text-ellipsis']"    #上传附件的名称
+  detail_enclosure_preview_name: "body>div:nth-of-type(7)>div>div:nth-child(2)>div>div:nth-child(2)>div>div>div>div"   #附件预览页面附件名称
+  detail_enclosure_set_preview_version_success: "[class='ant-alert-message']"    #附件预览成功提示
+  detail_comment_input: "[class='notranslate public-DraftEditor-content']"    #评论输入
+  detail_comment_send_button: "[class='tz-btn type-primary shape-round']"    #评论发送按钮
+  detail_comment_success: "[class='comment-content tz-editor-preview']>p"    #评论成功
+  detail_version_management_button: "[class='tz-btn ant-dropdown-trigger type-neutral shape-round checkable']"    #版本管理按钮
+  detail_version_upload_button: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li"    #上传新版本按钮
+  detail_version_upload_save_button: "[test-id='DAM_UPLOAD_NEW_VERSION']"   #保存新版本按钮
+  detail_version_button: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(2)"    #历史版本按钮
+  detail_history_version_success: "[class='tz-btn fw-bold type-primary shape-round ghost-text-hover']"   #查看历史版本成功
+  detail_close_page_button: "[class='ant-modal-body']>div>div>div>span>i"   #关闭详情页按钮
+  detail_describe_input: "[test-id='CORE_DESCRIPTION']"   #描述框输入
+  detail_intelligent_marking_success: "[class='ant-collapse ant-collapse-icon-position-left']>div>div:nth-child(2)>div>div:nth-child(6)>div>div:nth-child(2)>pre"   #智能打标-描述断言成功
+  detail_marketing_creativity_input: "[test-id='ORIGIN_CREATE_MARKET']>div>div>div>div>div"   #"营销创意"框
+  detail_marketing_creativity_select: "[role='listbox']>li:nth-child(1)"    #营销创意-"创意策划/文案"选项
+  detail_marketing_creativity_success: "[class='ant-collapse-item ant-collapse-item-active ant-collapse-item-disabled ant-collapse-no-arrow']>div:nth-child(2)>div>div:nth-child(7)>div>div:nth-child(2)"   #智能打标-营销创意断言成功
+  detail_brand_exit_button: "[test-id='CUSTOMER_BRAND_CATEGORY_INFO']>div>label>span>input"    #所属品牌-有 按钮
+  detail_brand_input: "[test-id='CORE_BRAND']>div>div>div>div>div"    #"品牌"框
+  detail_brand_select: "[test-id='CORE_BRAND']>span>div>div>div>div>ul>li"   #品牌-"Tezign 特赞"选项
+  detail_brand_success: "[class='spin-wrap size-large']>div>div:nth-child(3)>div>div:nth-child(2)>div>div:nth-child(10)>div>div:nth-child(2)"    #智能打标-品牌断言成功
+  detail_custom_label_input: "input[id='CORE_TAG']"   #"自定义标签"框
+  detail_custom_label_success: "[class='spin-wrap size-large']>div>div:nth-child(3)>div>div:nth-child(2)>div>div:nth-child(12)>div>div:nth-child(2)>div>div>div>div"   #智能打标-自定义标签断言成功
+  detail_validity_rule_not_button: "[class='ant-collapse ant-collapse-icon-position-left']>div>div:nth-child(2)>div>div:nth-child(30)>div>div>div:nth-child(2)>div>div>label:nth-child(2)>span>input"   #素材有效期规则-不同步
+  detail_release_date_input: "[class='ant-calendar-picker']>div>input"   #"素材发布日"框
+  detail_today_button: "[class='ant-calendar-today-btn ']"   #素材发布日-"今天"按钮
+  detail_release_date_success: "[class='ant-collapse ant-collapse-icon-position-left']>div:nth-child(1)>div:nth-child(2)>div>div:nth-of-type(14)>div>div:nth-child(2)"   #智能打标-素材发布日成功
+  detail_limit_channel_input: "[class='ant-collapse ant-collapse-icon-position-left']>div>div:nth-child(2)>div>div:nth-child(21)>div>div:nth-child(2)>div>div>span>span>span"    #"限制使用渠道"框
+  detail_official_account_select: "[title='官方公众号']"    #限制使用渠道-"官方公众号"按钮
+  detail_limit_channel_success: "[class='spin-wrap size-large']>div>div:nth-child(3)>div>div:nth-child(2)>div>div:nth-child(21)>div>div:nth-child(2)>p"    #智能打标-限制使用渠道断言成功
+  detail_test_style_input: "[class='ant-collapse ant-collapse-icon-position-left']>div>div:nth-child(2)>div>div:nth-child(28)>div>div:nth-child(2)>div>div>div>div>div>div"   #"测试类型为8的筛选"框
+  detail_first_select: "[class='ant-collapse ant-collapse-icon-position-left']>div>div:nth-child(2)>div>div:nth-child(28)>div>div:nth-child(2)>div>span>div>div>div>div>ul>li>span:nth-child(2)>span>div>div"   #测试类型为8的筛选-"1"选项
+  detail_test_style_success: "[class='spin-wrap size-large']>div>div:nth-child(3)>div>div:nth-child(2)>div>div:nth-child(28)>div>div:nth-child(2)>p"   #智能打标-测试类型为8的筛选断言成功
+  detail_permission_application_download_button: "//button[text()='申请下载权限']"   #申请下载权限按钮
+  permission_application_input: "[id='applyReason']"    #申请理由输入框
+  permission_application_button: "[class='tz-btn type-primary shape-round']"   #申请权限按钮
+  permission_application_know_button: "[class='tz-btn type-primary shape-round']"    #申请权限-我知道了按钮
+  permission_application_success: "[class='ant-modal-title']"    #申请成功
+  detail_permission_application_edit_button: "//button[text()='申请编辑权限']"   #申请编辑权限按钮
+  permission_type_input: "[class='core_visible_range  detail_row_wrapper']>div>div>div:nth-child(2)>div>div>div>div>div>div"   #素材权限范围输入框
+  company_inside_and_outside_all_download: "[role='listbox']>li"   #企业内外部全员可下载
+  company_inside_and_outside_all_download_assert: "[class='core_visible_range  detail_row_wrapper']>div>div>div:nth-child(2)>div>div>div>div>div>div>div"    #企业内外部全员可下载断言
+  company_all_download: "[role='listbox']>li:nth-child(2)"    #企业全员通用素材
+  company_all_download_assert: "[class='core_visible_range  detail_row_wrapper']>div>div>div:nth-child(2)>div>div>div>div>div>div>div"   #企业全员通用素材断言
+  department_control: "[role='listbox']>li:nth-child(3)"    #部门管控类素材
+  department_control_assert: "[class='core_visible_range  detail_row_wrapper']>div>div>div:nth-child(2)>div>div>div>div>div>div>div"   #部门管控类素材断言
+  department_private: "[role='listbox']>li:nth-child(4)"    #部门私有素材
+  department_private_assert: "[class='core_visible_range  detail_row_wrapper']>div>div>div:nth-child(2)>div>div>div>div>div>div>div"   #部门私有素材断言
+  personal_management: "[role='listbox']>li:nth-child(5)"   #个人管理素材
+  personal_management_assert: "[class='core_visible_range  detail_row_wrapper']>div>div>div:nth-child(2)>div>div>div>div>div>div>div"    #个人管理素材断言
+  personal_control: "[role='listbox']>li:nth-child(6)"    #个人管控类素材
+  personal_control_assert: "[class='core_visible_range  detail_row_wrapper']>div>div>div:nth-child(2)>div>div>div>div>div>div>div"   #个人管控类素材断言
+  custom: "[role='listbox']>li:nth-child(7)"    #自定义权限
+  custom_assert: "[class='core_visible_range  detail_row_wrapper']>div>div>div:nth-child(2)>div>div>div>div>div>div>div"   #自定义权限断言
+  detail_add_permission_button: "[class='core_visible_range  detail_row_wrapper']>div>div>div:nth-child(2)>div>div:nth-child(3)>button"   #增加权限按钮
+  permission_input: "[placeholder='请输入信息搜索成员或部门']"    #权限搜索输入框
+  permission_checkbox: "//div[@class='ant-modal-wrap ant-modal-centered']//div[@class='ant-modal-body']//input[@class='ant-checkbox-input']"    #勾选需要添加的权限
+  permission_is_chek: "//div[@class='ant-modal-wrap ant-modal-centered']//div[@class='spin-container']//div[@class='tui-tooltip-text undefined']"    #权限勾选成功
+  permission_confirm_button: "//button[text()='确认']"    #权限确认按钮
+  permission_first_name: "//*[@id='materil-detail-right']/div/div[1]/div[1]/div[3]/div[3]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[2]/div[1]/span[1]/span"    #第一个权限名称
+  permission_remove_button: "[class='tz-btn hover-red type-neutral shape-round size-small ghost-solid']"    #权限-批量移除按钮
+  permission_remove_all_select_button: "[class='ant-checkbox-wrapper']"   #权限-批量移除-全选按钮
+  permission_remove_delete_button: "[class='tz-btn ml-8 type-danger shape-square size-small ghost-reverse']"   #权限-批量移除-删除按钮
+  permission_remove_delete_confirm_button: "[class='foot-action action-ok type-danger']"   #权限-移除二次确认按钮
+  permission_remove_success: "[class='core_visible_range  detail_row_wrapper']>div>div>div:nth-child(2)>div>div:nth-child(2)>div>div:nth-child(2)>div>label>span:nth-child(2)"   #权限移除成功
+  detail_logs_success: "[id='materil-detail-right']>div>div>div:nth-child(2)>div:nth-child(2)>div"   #log打印成功
+
+
+
+
+
+
+
+
+
+AssetBasketPage:
+  notice_close_button: "[class='ant-notification ant-notification-topRight']>span>div>a>span"   #公告-关闭按钮
+  asset_selected_hover: "[class='ant-row']>div>div>div>div:nth-child(4)"    #hover上素材
+  asset_add_to_basket: "[class='ant-row']>div>div>div>div:nth-child(3)>span:nth-child(2)"    #加入素材篮按钮
+  basket_button: "[id='nav-header-right-node']>div>div:nth-child(2)>span>div"    #素材篮按钮
+  basket_share: "[class='bottom_right_container']>button"   #分享按钮
+  basket_share_create_link_button: "[class='tui-input-wrap with-suffix disabled']>div>button"   #批量分享-创建链接
+  share_success: "[class='message-text']"    #分享成功提示
+  basket_share_close_button: "button[class='ant-modal-close']"    #分享-关闭按钮
+  share_popup_title: "[class='ant-modal-title']"   #分享弹窗-标题
+  share_popup_theme: "[placeholder='分享主题']"   #分享弹窗-主题
+  basket_download: "[class='bottom_right_container']>button:nth-child(2)"#下载按钮
+  basket_empty: "[class='empty_text']"#清空素材篮按钮
+  basket_delete: "div[class='delete_icon']"#删除按钮
+  basket_title: "[title='1']"   #素材篮数量（1个）
+  basket_empty_assert: "[alt='empty']"    #素材篮为空断言
+  basket_empty_success: "[class='message-text']"    #清空素材篮成功
+  basket_add_same_asset_assert: "[class='message-text']"    #素材篮重复添加相同素材断言
+  basket_message_text_assert: "[class='message-text']"
+
+
+# 回收站页面
+RecyclePage:
+  notice_close_button: "[class='ant-notification ant-notification-topRight']>span>div>a>span"   #公告-关闭按钮
+  message_text_assert: "span[class='message-text']"   #提示
+  recycle_asset_tab: "[class=' ant-tabs-tab']"   #Tab-素材
+  recycle_group_tab: "[class='ant-tabs-tab-active ant-tabs-tab']"   #Tab-素材组
+  completely_delete_asset_button: "[id='root']>div>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(3)>div>div:nth-child(3)>div>div:nth-child(2)>div>div>div>div>div>table>tbody>tr:nth-child(1)>td:nth-of-type(5)>span>i:nth-of-type(2)"    #素材-彻底删除按钮
+  completely_delete_asset_confirm_button: "button[class='tz-btn type-danger shape-round']"    #素材-彻底删除二次确认按钮
+  completely_delete_group_button: "[id='root']>div>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(3)>div>div:nth-child(3)>div>div:nth-child(2)>div>div>div>div>div>table>tbody>tr:nth-child(1)>td:nth-of-type(7)>span>i:nth-of-type(2)"    #素材组-彻底删除按钮
+  completely_delete_group_confirm_button: "button[class='tz-btn type-danger shape-round']"    #素材组-彻底删除二次确认按钮
+  recovery_asset_button: "[id='root']>div>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(3)>div>div:nth-child(3)>div>div:nth-child(2)>div>div>div>div>div>table>tbody>tr:nth-child(1)>td:nth-of-type(5)>span>i:nth-of-type(1)"   #素材-恢复按钮
+  recovery_asset_confirm_button: "button[class='tz-btn type-primary shape-round']"   #素材-恢复二次确认按钮
+  recovery_group_button: "[id='root']>div>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(3)>div>div:nth-child(3)>div>div:nth-child(2)>div>div>div>div>div>table>tbody>tr:nth-child(1)>td:nth-of-type(7)>span>i:nth-of-type(1)"   #素材组-恢复按钮
+  recovery_group_confirm_button: "button[class='tz-btn type-primary shape-round']"   #素材组-恢复二次确认按钮
+  recycle_empty_button: "//button[text()='清空回收站']"    #清空按钮
+  recycle_empty_confirm_button: "button[class='tz-btn type-danger shape-round']"    #清空二次确认按钮
+  delete_time_sort_asc_button: "button[class='tz-btn type-neutral shape-round size-small']"   #删除时间排序-升序按钮
+  delete_time_sort_desc_button: "button[class='tz-btn type-neutral shape-round size-small']"    #删除时间排序-降序按钮
+  check_first_button: "[class='ant-tabs-tabpane ant-tabs-tabpane-active']>div:nth-child(2)>div>div>div>div>div>table>tbody>tr:nth-child(1)>td:nth-child(1)>span>label>span>input"    #勾选第一项按钮
+  batch_completely_delete_asset_button: "[id='root']>div>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(4)>div>div:nth-child(1)"    #批量操作-素材-彻底删除按钮
+  batch_completely_delete_asset_confirm_button: "body>div:nth-of-type(2)>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-child(2)>button:nth-child(2)"    #批量操作-素材-彻底删除二次确认按钮
+  batch_completely_delete_group_button: "[id='root']>div>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(4)>div>div:nth-child(2)"    #批量操作-素材组-彻底删除按钮
+  batch_completely_delete_group_confirm_button: "body>div:nth-of-type(2)>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-child(2)>button:nth-child(2)"    #批量操作-素材组-彻底删除二次确认按钮
+  batch_recovery_asset_button: "[id='root']>div>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(4)>div>div:nth-child(2)"   #批量操作-素材-恢复按钮
+  batch_recovery_asset_confirm_button: "body>div:nth-of-type(2)>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-child(2)>button:nth-child(2)"   #批量操作-素材-恢复二次确认按钮
+  batch_recovery_group_button: "[id='root']>div>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(4)>div>div:nth-child(2)"   #批量操作-素材组-恢复按钮
+  batch_recovery_group_confirm_button: "body>div:nth-of-type(2)>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-child(2)>button:nth-child(2)"   #批量操作-素材组-恢复二次确认按钮
+  batch_cancel_button: "[id='root']>div>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(4)>div>div:nth-child(4)"   #批量操作-取消按钮
+
+
+# 工作流页面
+WorkflowPage:
+  notice_close_button: "[class='ant-notification ant-notification-topRight']>span>div>a>span"   #公告-关闭按钮
+  message_text_assert: "span[class='message-text']"   #提示
+  workflow_novice_guide_close_button: "[class='ant-modal-body']>div>button"    #新手引导按钮
+  workflow_tab_all_project: "li[title='所有项目']"    #Tab-所有项目
+  workflow_tab_cooperation_project: "li[title='协作设计中']"    #Tab-协作设计中项目
+  workflow_tab_in_audit_project: "li[title='审批中']"      #Tab-审批中项目
+  workflow_tab_audit_fail_project: "li[title='审批未通过']"   #Tab-审批未通过项目
+  workflow_tab_audit_adopt_project: "li[title='审批已通过']"    #Tab-审批已通过项目
+  workflow_create_project_button: "[id='main-layout']>div>div>div:nth-child(1)>div>button:nth-of-type(2)"    #新建项目按钮
+  workflow_project_name_input: "input[id='NAME']"   #项目名称输入框
+  workflow_project_name_edit_input: "body>div:nth-of-type(4)>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-of-type(2)>div>div>form>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div>span>div>input"   #编辑-项目名称输入框
+  workflow_describe_input: "[id='DESC']"    #项目描述输入框
+  workflow_describe_edit_input: "body>div:nth-of-type(4)>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-of-type(2)>div>div>form>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div>span>div>div:nth-child(1)>textarea"    #编辑-描述输入框
+  workflow_order_city_input: "[id='CUSTOMER_PJ_CITY']"    #下单城市输入框
+  workflow_order_city_edit_input: "body>div:nth-of-type(4)>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-of-type(2)>div>div>form>div:nth-child(1)>div:nth-child(3)>div:nth-child(2)>div>span>div>input"    #编辑-下单城市输入框
+  workflow_order_date_input: "[class='ant-calendar-picker-input ant-input']"    #下单日期输入框
+  workflow_order_date_today_button: "[class='ant-calendar-footer-btn']"   #下单日期-今天按钮
+  workflow_supplier_input: "[id='CUSTOMER_PJ_SUPPLIER']"    #供应商输入框
+  workflow_supplier_edit_input: "body>div:nth-of-type(4)>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-of-type(2)>div>div>form>div:nth-child(1)>div:nth-child(5)>div:nth-child(2)>div>span>div>input"    #编辑-供应商输入框
+  workflow_edit_confirm_button: "body>div:nth-of-type(4)>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-of-type(2)>div>div:nth-child(1)>form>div:nth-child(2)>button:nth-child(2)"   #编辑-确认按钮
+  workflow_next_step_button: "[class='ant-modal']>div:nth-child(2)>div:nth-child(3)>div>div:nth-child(1)>form>div:nth-child(2)>button:nth-child(2)"   #下一步按钮
+  workflow_confirm_button: "[class='tz-btn type-primary shape-round']"   #确认按钮
+  workflow_edit_project_confirm_button: "body>div:nth-of-type(5)>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-child(3)>div>div:nth-child(1)>form>div:nth-of-type(2)>button:nth-of-type(2)"    #编辑项目-确认按钮
+  workflow_submit_audit_button: "[id='root']>div>div>main>div>div>div:nth-child(2)>div:nth-child(1)>div>div>div:nth-of-type(3)>div>button:nth-of-type(4)"    #提交审批按钮
+  workflow_one_add_button: "[class='tui-carousel-item']>div>div>div:nth-child(1)"   #简单审批模板-添加按钮
+  workflow_search_member_input: "[class='ant-select-search__field']"    #添加审批人-人员输入框
+  workflow_search_member_input_click: "[class='ant-select-selection__placeholder']"   #添加审批人-人员输入框
+  workflow_search_add_button: "[class='tz-btn addButton type-primary shape-round size-small']"    #添加审批人-搜索结果中的"添加"按钮
+  workflow_search_confirm_button: "[class='mt-20']>button:nth-child(2)"    #添加审批人-确认按钮
+  workflow_submit_audit_submit_button: "[class='footer-inner']>button:nth-of-type(2)"    #简单审批模板-提交审批按钮
+  workflow_submit_audit_confirm_button: "[class='foot-action action-ok type-primary']"    #简单审批模板-二次确认
+  workflow_submit_audit_again_button: "[class='tz-btn ml-8 type-primary shape-round']"    #重新提交按钮
+  workflow_more_new_create_audit_button: "[class='tz-btn type-primary shape-round ghost-reverse']"   #新建流程按钮
+  workflow_more_tab_button: "[class='spin-wrap size-default']>div:nth-child(1)>div>div:nth-child(1)>div:nth-child(2)>div"   #或签审批模板Tab
+  workflow_more_add_button: "[class='tui-carousel-item']:nth-of-type(1)>div>div>div:nth-child(1)"    #或签审批模板-添加按钮
+  workflow_upload_file_button: "[class='tz-btn type-primary shape-round']"   #工作流页面-上传素材按钮
+  workflow_filters_brand_input: "[test-id='CORE_BRAND']>div>div>div>div>div"    #品牌输入框
+  workflow_brand_first_select: "[role='listbox']>li:nth-child(1)"   #"Tezign 特赞"品牌
+  workflow_upload_asset_permission_input: "[class='ant-collapse-item ant-collapse-item-active']>div>div>div>div>div>div>div>div>div>div>div>div"    #"素材权限范围"框
+  workflow_upload_asset_permission_custom_select: "[role='listbox']>li:nth-child(7)"    #"自定义"选项
+  workflow_upload_file_confirm_button: "[class='tz-btn ml-12 type-primary shape-round']"   #上传素材页面-"上传素材"按钮
+  workflow_search_open_button: "[id='main-layout']>div>div>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)"   #搜索项目界面打开按钮
+  workflow_search_input: "[class='ant-input-affix-wrapper']>input"   #搜索项目界面-输入按钮
+  workflow_search_result_select: "[role='document']>div:nth-child(2)>div>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div"   #搜索结果第一个选择
+  workflow_delete_project_button: "[class='tz-btn type-danger shape-square ghost-solid icon-button']"    #删除按钮
+  workflow_delete_project_confirm_button: "[class='foot-action action-ok type-danger']"    #二次确认删除
+  workflow_first_project_name: "[class='ant-row']>div>div>div:nth-child(3)>div:nth-child(1)"   #第一个项目名称
+  workflow_project_name: "[class='display-flex flex-align-items-start flex-justify-content-space-between']>div:nth-child(1)>div>span"   #项目内-项目名称
+  workflow_edit_project_button: "[id='root']>div>div>main>div>div>div:nth-child(2)>div>div>div>div:nth-child(4)>div>button:nth-child(2)"    # 编辑项目按钮
+  workflow_share_button: "[class='flex-direction-column flex-grow-1']>div>div:nth-of-type(3)>div>button:nth-of-type(3)"   #分享按钮
+  workflow_share_copy_link_button: "[class='tz-btn type-primary shape-round ghost-reverse']"   #分享-复制链接按钮
+  workflow_share_close_button: "body>div:nth-of-type(6)>div>div:nth-child(2)>div>div:nth-child(2)>button[aria-label='Close']"   #分享-关闭按钮
+  workflow_sort_button: "[class='mr-8']"    #排序按钮
+  workflow_sort_create_time_select: "[class='drop-select-option']"    #排序-创建时间排序
+  workflow_sort_update_time_select: "[class='drop-select-option']"    #排序-修改时间排序
+  workflow_batch_button: "[class='display-flex flex-justify-content-end flex-1']>div>button"   #批量编辑按钮
+  workflow_batch_edit_project_button: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(1)"    #批量-编辑按钮
+  workflow_batch_all_select_button: "[class='ant-checkbox-input']"   #批量编辑-全选按钮
+  workflow_batch_edit_project_asset_edit_button: "[class='display-flex']>button:nth-child(1)"   #批量编辑-编辑素材按钮
+  workflow_batch_edit_project_asset_edit_dec_input: "[test-id='CORE_DESCRIPTION']"    #批量编辑-修改素材描述输入框
+  workflow_batch_edit_project_asset_edit_save_button: "[test-id='DAM_UPDATE_SINGLE']"    #批量编辑-保存素材按钮
+  workflow_batch_share_project_button: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(2)"    #批量-分享按钮
+  workflow_batch_share_project_asset_share_button: "[class='display-flex']>button:nth-child(1)"   #批量分享-分享素材按钮
+  workflow_batch_share_project_create_link_button: "[class='tui-input-suffix']>button"   #分享-创建链接按钮
+  workflow_batch_delete_project_button: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(3)"    #批量-删除按钮
+  workflow_batch_delete_project_asset_delete_button: "[class='display-flex']>button:nth-child(1)"   #批量删除-删除素材按钮
+  workflow_batch_delete_project_confirm_button: "[class='foot-action action-ok type-danger']"    #删除-二次确认
+  batch_control_select_button: "[class='tz-btn type-neutral shape-round']"    #取消选择-回到批量操作
+  revoke_approval_opinions_button: "[class='display-flex-center']>button"   #撤销审批-审批意见按钮
+  revoke_tab_project_schedule_button: "[class='ant-modal-body']>div>div:nth-child(2)>div:nth-child(1)>div>div>div>div>div:nth-child(1)>div:nth-child(1)"    #撤销审批-项目进度tab
+  revoke_tab_project_schedule_revoke_audit_button: "[class='tz-btn type-danger shape-round ghost-reverse']"   #撤销审批-撤回审批流程按钮
+  revoke_tab_project_schedule_revoke_audit_confirm_button: "[class='foot-action action-ok type-primary']"   #撤销审批-二次确认按钮
+  workflow_comment_tab: "[class='flex-direction-column flex-grow-1']>div>div:nth-child(5)>div>div:nth-child(1)>div>div>div>div>div:nth-child(1)>div:nth-child(2)"   #Tab-评论
+  workflow_comment_button: "[id='main-layout']>div>div>div:nth-child(2)>div>div>div>div:nth-child(5)>div>div:nth-child(3)>div:nth-child(2)>div:nth-child(2)>div:nth-child(3)"   #评论按钮
+  workflow_comment_input_click: "[class='rdw-editor-main']"    #评论-输入框点击
+  workflow_comment_input: "[class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr']"   #评论-输入框
+  workflow_comment_send_out_button: "[class='clear-fix']>button"    #评论-发送按钮
+  workflow_comment_first: "[class='comment-content tz-editor-preview']>p"   #评论-评论成功断言
+  workflow_comment_first_delete_button: "[class='comment-action']>button"   #评论-删除按钮
+  workflow_comment_first_delete_confirm_button: "[class='tz-btn type-danger shape-round size-xs']"    #二次确认
+  workflow_project_log_tab: "[class='flex-direction-column flex-grow-1']>div>div:nth-child(5)>div>div:nth-child(1)>div>div>div>div>div:nth-child(1)>div:nth-child(3)"    #Tab-日志
+  workflow_project_log_assert: "[class='flex-direction-column flex-grow-1']>div>div:nth-child(5)>div>div:nth-child(3)>div:nth-child(3)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)"    #日志断言-时间
+
+
+
+# 我收藏的素材组页面
+MyCollectionPage:
+  notice_close_button: "[class='ant-notification ant-notification-topRight']>span>div>a>span"   #公告-关闭按钮
+  assert_massage: "[class='message-text']"   #消息断言
+  collection_create_group_button: "[class='cache-route']>div>div>div:nth-child(2)>button"    #新建素材组
+  collection_create_group_name_input: "[id='groupName']"    #素材组名称
+  collection_create_group_description_input: "[id='description']"   #素材组描述
+  collection_create_group_confirm_button: "[class='text-right']>button:nth-child(2)"    #确定按钮
+  collection_create_group_assert: "[id='group-info-wrapper']>div>div:nth-child(2)>div>div>div>div>span:nth-child(2)>span>a"   #获取面包屑素材组名称
+  collection_group_name_first: "[class='ant-row']>div>div>div:nth-child(3)"   #素材组名称（第一个素材组）
+  collection_collect_button: "[class='ant-row']>div>div>div:nth-child(2)>div:nth-child(2)>div>i>svg"    #收藏按钮-搜索后的
+  collection_search_input: "[class='ant-input']"   #输入框
+  collection_sort_button: "[id='content']>div>div>div>div>div>div"    #排序按钮
+  collection_tile_mode: "label[class='ant-radio-button-wrapper']"   #平铺模式按钮
+  collection_tile_mode_assert: "[id='content']>div:nth-child(2)>div>div>div>div:nth-child(2)>i>svg"   #平铺模式断言
+  collection_list_mode: "label[class='ant-radio-button-wrapper']"   #列表模式按钮
+  collection_list_mode_assert: "[class='ant-table-thead']>tr>th>span>div>span"   #列表模式断言
+  collection_search_group_first_name: "[class='ant-row']>div>div>div:nth-child(3)"    #搜索结果的第一个素材组名称
+  collection_search_asset_first_name: "[id='search-content']>div:nth-child(3)>div:nth-child(2)>div>div>div>div>div:nth-child(4)>span"    #搜索结果的第一个素材名称
+  update_time_sort: "[class='drop-select-wrap']>div:nth-child(1)"   #更新时间
+  update_time_sort_assert: "[class='drop-select-wrap']>div:nth-child(1)>div>span"   #更新时间
+  recently_opened_sort: "[class='drop-select-wrap']>div:nth-child(2)"    #最近打开
+  recently_opened_sort_assert: "[class='drop-select-wrap']>div:nth-child(2)>div>span"    #最近打开断言
+  material_heat_sort: "[class='drop-select-wrap']>div:nth-child(3)"    #素材热度
+  material_heat_sort_assert: "[class='drop-select-wrap']>div:nth-child(3)>div>span"    #素材热度断言
+  history_total_activity_sort: "[class='drop-select-wrap']>div:nth-child(4)"    #历史总活跃
+  history_total_activity_sort_assert: "[class='drop-select-wrap']>div:nth-child(4)>div>span"    #历史总活跃断言
+  material_name_sort: "[class='drop-select-wrap']>div:nth-child(5)"    #素材名称
+  material_name_sort_assert: "[class='drop-select-wrap']>div:nth-child(5)>div>span"    #素材名称断言
+  create_time_sort: "[class='drop-select-wrap']>div:nth-child(6)"    #创建时间
+  create_time_sort_assert: "[class='drop-select-wrap']>div:nth-child(6)>div>span"    #创建时间断言
+  group_name: "[class='ant-row']>div>div>div:nth-child(3)"    #素材组名称
+  group_more_button: "[class='ant-row']>div>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)"   # ... 更多
+  group_more_delete_button: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(8)>button"    # 删除素材组button
+  all_confirm_delete_collection: "[class='foot-action action-ok type-danger']"    # 弹窗确认删除button
+
+
+#全部素材组-我创建的页面元素
+MyCreatedPage:
+  created_search_input: "[class='ant-input']"   #输入框
+  created_sort_button: "[id='content']>div>div:nth-child(1)>div:nth-child(1)>div>div:nth-child(1)>div:nth-child(1)>i"    #排序按钮
+  created_tile_mode: "[class='ant-radio-group ant-radio-group-outline ant-radio-group-small']>label:nth-child(1)>span:nth-child(2)>i"   #平铺模式按钮
+  created_list_mode: "[class='ant-radio-group ant-radio-group-outline ant-radio-group-small']>label:nth-child(2)>span:nth-child(2)>i"   #列表模式按钮
+  created_search_all: "[class='cache-route']>div>div>div:nth-child(2)>div>span:nth-child(1)>span:nth-child(1)"   #搜索全部结果
+  created_group_button: "[class='tz-btn _sAtYC type-primary shape-round']" #新建素材组按钮
+  created_group_name_input: "[id='groupName']" #输入素材组的名称
+  created_group_desc_input: "[id='description']" #输入此素材组的描述
+  created_group_confirm_button: "[class='tz-btn ml-20 type-primary shape-round']" #确定按钮
+  created_in_group: "[class='ant-row']>div:nth-child(1)" #进入列表第一个素材库
+  created_more: "[class='anticon anticon-icon-more _1b5oZ ant-dropdown-trigger undefined _2pYaT']" #更多操作
+  created_delete_group: "[class='tz-btn _1GT6r type-danger shape-round ghost-text']" # 删除素材组
+  created_delete_group_yes: "[class='foot-action action-ok type-danger']" #确定删除素材组
+  created_group_name: "[class='ant-table-thead']>tr>th:nth-child(1)>span>div>span:nth-child(1)" #视图-列表模式下获取素材组名称的元素
+  created_sort: "[id='content']>div>div:nth-child(1)>div:nth-child(1)>div>div:nth-child(1)" #排序组件
+  created_sort_text: "[id='content']>div>div:nth-child(1)>div:nth-child(1)>div>div:nth-child(1)>div>span" #排序组件text
+  created_sort_updatetime: "[class='drop-select-wrap']>div:nth-child(1)" #排序-更新时间
+  created_sort_recent: "[class='drop-select-wrap']>div:nth-child(2)" #排序-最近打开
+  created_sort_hot: "[class='drop-select-wrap']>div:nth-child(3)" #排序-素材热度
+  created_sort_history_hot: "[class='drop-select-wrap']>div:nth-child(4)" #排序-历史总活跃
+  created_sort_group_name: "[class='drop-select-wrap']>div:nth-child(5)" #排序-名称排序
+  created_sort_create_time: "[class='drop-select-wrap']>div:nth-child(6)" #排序-创建时间
+  created_collect: "[class='ant-row']>div:nth-child(1)"
+  created_collect_click: "[class='ant-row']>div:nth-child(1)>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)"
+  created_collect_toast: "body > div.tz-message.type-success.visible > div > span"
+  created_list_first_group: "[class='ant-table-tbody']>tr:nth-child(1)"
+  created_group_title: "[class='ant-row']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)"
+
+
+#全部素材组-与我协作的页面
+MyCooperationPage:
+  cooperation_search_input: "[class='ant-input']"   #输入框
+  cooperation_sort_button: "[id='content']>div>div:nth-child(1)>div:nth-child(1)>div>div:nth-child(1)>div:nth-child(1)>i"    #排序按钮
+  cooperation_tile_mode: "[class='ant-radio-group ant-radio-group-outline ant-radio-group-small']>label:nth-child(1)>span:nth-child(2)"   #平铺模式按钮
+  cooperation_list_mode: "[class='ant-radio-group ant-radio-group-outline ant-radio-group-small']>label:nth-child(2)>span:nth-child(2)"   #列表模式按钮
+  cooperation_search_all: "[class='cache-route']>div>div>div:nth-child(2)>div>span:nth-child(1)>span:nth-child(1)"   #搜索全部结果
+  cooperation_group_button: "[class='tz-btn _sAtYC type-primary shape-round']" #新建素材组按钮
+  cooperation_group_name_input: "[id='groupName']" #输入素材组的名称
+  cooperation_group_desc_input: "[id='description']" #输入此素材组的描述
+  cooperation_group_confirm_button: "[class='tz-btn ml-20 type-primary shape-round']" #确定按钮
+  cooperation_in_group: "[class='ant-row']>div:nth-child(1)" #进入列表第一个素材库
+  cooperation_more: "[class='anticon anticon-icon-more _1b5oZ ant-dropdown-trigger undefined _2pYaT']" #更多操作
+  cooperation_delete_group: "[class='tz-btn _1GT6r type-danger shape-round ghost-text']" # 删除素材组
+  cooperation_delete_group_yes: "[class='foot-action action-ok type-danger']" #确定删除素材组
+  cooperation_group_name: "[class='ant-table-thead']>tr>th:nth-child(1)>span>div>span:nth-child(1)" #视图-列表模式下获取素材组名称的元素
+  cooperation_sort: "[id='content']>div>div:nth-child(1)>div:nth-child(1)>div>div:nth-child(1)" #排序组件
+  cooperation_sort_text: "[id='content']>div>div:nth-child(1)>div:nth-child(1)>div>div:nth-child(1)>div>span" #排序组件text
+  cooperation_sort_updatetime: "[class='drop-select-wrap']>div:nth-child(1)" #排序-更新时间
+  cooperation_sort_recent: "[class='drop-select-wrap']>div:nth-child(2)" #排序-最近打开
+  cooperation_sort_hot: "[class='drop-select-wrap']>div:nth-child(3)" #排序-素材热度
+  cooperation_sort_history_hot: "[class='drop-select-wrap']>div:nth-child(4)" #排序-历史总活跃
+  cooperation_sort_group_name: "[class='drop-select-wrap']>div:nth-child(5)" #排序-名称排序
+  cooperation_sort_create_time: "[class='drop-select-wrap']>div:nth-child(6)" #排序-创建时间
+  cooperation_collect: "[class='ant-row']>div:nth-child(1)"
+  cooperation_collect_click: "[class='ant-row']>div:nth-child(1)>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)"
+  cooperation_collect_toast: "body > div.tz-message.type-success.visible > div > span"
+  cooperation_list_first_group: "[class='ant-table-tbody']>tr:nth-child(1)"
+  cooperation_group_title: "[class='ant-row']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)"
+
+# 待入库页面元素
+PendingAreaPage:
+  # 单个删除
+  single_delete: "[class='ant-table-body-inner']>table>tbody>tr:nth-child(1)>td>div>a:nth-child(1)"
+  # 单个入库
+  single_ingest: "[class='ant-table-body-inner']>table>tbody>tr:nth-child(1)>td>div>a:nth-child(3)"
+  # 素材详情
+  draft_detail: "[class='ant-table-content']>div:nth-child(1)>div>table>tbody>tr:nth-child(1)>td:nth-child(2)>div>span"
+  # 视频播放
+  video_play: "[class='gallery-item active']>div>div>div:nth-child(1)"
+  # 详情页素材名称
+  draft_name: "[class='title text-ellipsis']"
+  # 素材详情页左顶部素材名称
+  draft_left_name: "[class='head-title']"
+  # 详情页切换素材，下一个arrow
+  next_arrow: ".gallery-next-arrow"
+  # 详情页切换素材，上一个arrow
+  prev_arrow: ".gallery-prev-arrow"
+  # 关闭详情页弹窗x
+  detail_close_x: "//*[@class='ant-modal-close-x']/.."
+  # 素材详情页删除按钮
+  detail_delete: ".color-danger"
+  # 弹窗确认删除按钮
+  Pop-ups_confirm: "[class='foot-action action-ok type-danger']"
+  # 删除成功toast提示
+  delete_successful_toast: "[class='message-text']"
+  # 弹窗取消删除按钮
+  Pop-ups_cancel: "[class='foot-action action-cancel']"
+  # 单个checkbox
+  single_checkbox: "[class='ant-table-content']>div:nth-child(1)>div>table>tbody>tr:nth-child(1)>td:nth-child(1)>span>label>span>input"
+  # 全选checkbox
+  draft_all_checkbox: "[class='ant-table-content']>div:nth-child(1)>div>table>thead>tr>th:nth-child(1)>span>div>span:nth-child(1)>div>label>span>input"
+  # 批量删除
+  multi_delete: "[class='tz-btn ml-12 type-neutral shape-round']"
+  # 批量入库
+  multi_ingest: "[class='tz-btn ml-12 type-primary shape-round disabled']"
+  # 重复检测状态-已重复
+  repeat: "//*[@id='root']/div[1]/div[2]/div[4]/div/div[3]/div/div/div/div/div[1]/div/table/tbody/tr[1]/td[3]/div/div"
+  # 重复检测状态-检测中
+  checking: "//*[@id='root']/div[1]/div[2]/div[4]/div/div[3]/div/div/div/div/div[1]/div/table/tbody/tr[1]/td[3]/div/div"
+  # 重复检测状态-未重复
+  not_repeated: "//*[@id='root']/div[1]/div[2]/div[4]/div/div[3]/div/div/div/div/div[1]/div/table/tbody/tr[1]/td[3]/div"
+  # 过滤入库按钮
+  filter_repeat: "[class='tz-btn type-primary shape-round']"
+  # 全部入库按钮
+  no_filter: "[class='tz-btn mr-16 type-neutral shape-round']"
+  # 素材打标弹窗标题
+  tag_title: "[class='_2lJHQ']"
+  # 素材库查重
+  check_repeat: "[class='_3aW0X']"
+  # 操作栏-删除
+  operation_delete: "[class='ant-table-body-outer']>div>table>tbody>tr:nth-child(1)>td>div>a:nth-child(1)"
+  # 已选xx项
+  selected_items: "[class='_0oNw-']>span"
+  # 数字翻页-第二页
+  second_page: "[class='ant-pagination-item ant-pagination-item-2']>a"
+  # 列表左下页面计数
+  page_count: "[class='ant-pagination-total-text']"
+  # 列表-下一页
+  next_page: "[class=' ant-pagination-next']"
+  # 列表-上一页
+  pre_page: "[class=' ant-pagination-prev']"
+  # 下拉页数列表组件
+  select_page: "[class='ant-pagination-options-size-changer ant-select ant-select-enabled']"
+  # 10条/页
+  ten_per_page: "[class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']>li:nth-child(1)"
+  # 40条/页
+  four_per_page: "[class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']>li:nth-child(4)"
+  # 下拉页数列表组件text
+  select_page_text: "[class='ant-select-selection-selected-value']"
+  # 过滤入库toast提示
+  filter_toast: "[class='message-text']"
+  # 入库所选
+  ingest_selected: "[class='tz-btn type-primary shape-round']"
+  # 重复检测弹窗提示tips:
+  repeat_win_tips: "[class='_GShpl']"
+  # 待入库列表第一个素材的素材类型
+  draft_type: "//*[@id='root']/div[1]/div[2]/div[4]/div/div[3]/div/div/div/div/div[1]/div/table/tbody/tr[1]/td[5]/div"
+  # 网页/纯文本的预览提示toast
+  url_text_toast: "text=暂不支持该类型预览"
+  # 详情页权限组件
+  draft_auth_selected: ".mt-4 div div .tui-select-wrap .ant-select-show-arrow .ant-select-selection .ant-select-selection__rendered"
+  # 个人管理素材
+  draft_personal_asset: "text=个人管理素材"
+  # 入库成功toast提示
+  ingest_successful_toast: "text=入库成功，共1项，请刷新页面后查看"
+  # 过滤入库toast提示
+  filter_ingest_toast: "text=待入库项均重复，请重新选择"
+  # 详情页重复素材标题-素材库查重
+  repeat_confirm_title: "text=素材库查重"
+
+
+# 素材组内页面
+AssetGroupPage:
+  # 全部下新建素材组
+  all_new_collection: "[id='group-wrapper']>div>div:nth-child(2)>button"
+  # 素材组封面图-上传button
+  cover_pic_upload: "[class='file-select']>div"
+  # 素材组内-全部面包屑
+  group_all_bread_crumbs: "[id='group-info-wrapper']>div>div:nth-child(2)>div>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>span:nth-child(1)>span:nth-child(1)>a"
+  # 进入素材组列表第一个素材组
+  enter_collection: "[class='ant-row']>div:nth-child(1)>div>div:nth-child(2)"
+  # 进入特定二级素材组
+  enter_second_collection: "[id='group-info-wrapper']>div>div:nth-child(4)>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div>div>div>div>div:nth-child(3)"
+  # 收藏素材组
+  collect: "[id='group-info-wrapper']>div>div:nth-child(2)>div>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>i:nth-child(1)"
+  # 订阅素材组
+  subscribe: "[id='group-info-wrapper']>div>div:nth-child(2)>div>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>i:nth-child(2)"
+  # ... 更多
+  more: "[id='group-info-wrapper']>div>div:nth-child(2)>div>div:nth-child(1)>div:nth-child(1)>i"
+  # 编辑信息
+  edit_collection: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(1)>button"
+  # 分享
+  share_collection: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(2)>button"
+  # 下载button
+  download: "[class='ant-dropdown-menu-submenu-title']>button"
+  # 下载素材
+  download_asset: "[id='download-2$Menu'] > li:nth-child(1) > button"
+  # 下载素材及附件
+  download_all : "[id='download-2$Menu'] > li:nth-child(2) > button"
+  # 下载弹窗断言
+  download_assert: "text=等待过程中您可以打开新窗口继续工作"
+  # 复制素材组
+  copy_collection: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(4)>button"
+  # 移动素材组
+  move_collection: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(5)>button"
+  # 移动至弹窗-全部tab
+  move_to_all: "[id='tree-item--1']>div>span"
+  # 移动确认button
+  move_confirm: "[class='tz-btn _KW78x _v5EYw type-primary shape-round']"
+  # 移动取消button
+  move_cancel: "[class='tz-btn mr-10 _KW78x type-neutral shape-round ghost-text']"
+  # 移动二次确认弹窗-取消button
+  move_popup_cancel: "button[class='tz-btn type-neutral shape-round']"
+  # 移动二次确认弹窗-确认button
+  move_popup_confirm: "button[class='tz-btn type-primary shape-round']"
+  # 移动成功toast提示，断言
+  move_successful_toast: "text=操作成功"
+  # 分享记录
+  share_records: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(6)>button"
+  # 分享记录弹窗title
+  share_records_title: "[class='ant-modal-body']>div>div:nth-child(1)>span"
+  # 删除素材组button
+  delete_collection: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(7)>button"
+  # 弹窗取消删除button
+  cancel_delete_collection: "[class='foot-action action-cancel']"
+  # 弹窗确认删除button
+  confirm_delete_collection: "[class='foot-action action-ok type-danger']"
+  # 分享按钮
+  share_button: "[id='group-info-wrapper']>div>div:nth-child(2)>div>div:nth-child(2)>button:nth-child(2)"
+  # +新增
+  add: "[id='group-info-wrapper']>div>div:nth-child(2)>div>div:nth-child(2)>button:nth-child(4)"
+  # +新增-子组
+  sub_add: "[id='group-info-wrapper']>div>div:nth-child(2)>div>div:nth-child(2)>button:nth-child(3)"
+  # 上传文件button
+  upload_files: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(1)>div>button"
+  # 上传文件input
+  upload_files_input: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(1)>div>input"
+  # 上传文件夹
+  upload_folders: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(2)>div>button"
+  # 上传文件夹input
+  upload_folders_input: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(2)>div>input"
+  # 百度盘导入
+  baidu_transfer: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(3)>button>span"
+  # 百度盘链接输入框
+  baidu_transfer_link: "[placeholder=直接粘贴链接和密码到此处]"
+  # 百度盘密码输入框
+  baidu_transfer_password: "[placeholder=密码]"
+  # 百度盘同步-立即导入
+  baidu_transfer_import_confirm: "[class='tz-btn ml-12 type-primary shape-round']"
+  # 百度盘同步断言
+  baidu_transfer_assert: "[class='_M50ep']"
+  # muse导入
+  muse_transfer: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(4)>button>span"
+  # 从素材库添加
+  add_from_assets: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(10)>button"
+  # 新建文章
+  group_new_article: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(8)>button"
+  # 导入网页
+  group_import_url: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(6)>button"
+  # 新建纯文本
+  group_new_text: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(7)>button"
+  # 从素材库添加，添加成功 toast
+  add_successful_toast: "text=添加成功"
+  # 新建子素材组
+  add_sub_collection: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(11)>button"
+  # 中间+新增按钮
+  middle_add: "div[class='display-flex']>button:nth-child(1)"
+  # 中间+新增按钮-上传文件
+  middle_upload_file:
+  # 中间新增子素材组按钮
+  middle_new_sub_collection: "button[class='tz-btn _pYIN4 type-neutral shape-round']"
+  # 取消新建子素材组button
+  new_sub_collection_cancel: "[class='text-right']>button:nth-child(1)"
+  # 确认新建素材组按钮
+  confirm_button: "[class='text-right']>button:nth-child(2)"
+  # 取消新建素材组按钮
+  cancel_button: "[class='text-right']>button:nth-child(1)"
+  # 组名输入框
+  name_input: "[id='groupName']"
+  # 描述输入框
+  description_input: "[id='description']"
+  # 空页面提示
+  blank_tips: "p[class='ant-empty-description']"
+  # 立即入库
+  ingest_now: "div[class='status_completed_immediately_btn']"
+  # 入库所选
+  ingest_checked: "[class='tz-btn type-primary shape-round']"
+  # 入库成功toast message
+  upload_successful_toast: "[class='message-text']"
+  # 百度网盘/Muse输入框
+  transfer_input: "[id='link-Validate-form_shareUrl']"
+  # 百度网盘/Muse密码输入框
+  transfer_password_input: "[id='link-Validate-form_password']"
+  # 百度网盘/Muse立即导入按钮
+  import_now: "button[class='tz-btn ml-12 type-primary shape-round']"
+  # 素材选择器，勾选第一个素材
+  add_asset: "[class='material-selector-tab-content material-selector-tab-list']>div>div:nth-child(2)>div>div>div:nth-child(2)>div>div:nth-child(2)>div"
+  # 素材选择器确认按钮
+  add_confirm: "button[class='tz-btn ml-24 type-primary shape-round']"
+  # 分享弹窗创建链接按钮
+  create_link: "[class='tui-input-wrap with-suffix disabled']>div>button"
+  # 关闭分享弹窗
+  close_share_win: "[class='ant-modal-content']>button"
+  # 创建分享链接成功toast message
+  share_successful_toast: "text=链接创建并复制成功，快去分享吧～"
+  # 分享弹窗：展开更多设置button
+  get_more: "p[class='_1r-z9']"
+  # 复制至弹窗搜索框
+  copy_search: "div[class='ant-select-selection__placeholder']"
+  # 复制至弹窗确认按钮
+  copy_confirm: "[class='tz-btn _KW78x _v5EYw type-primary shape-round']"
+  # 复制至弹窗取消按钮
+  copy_cancel: "[class='tz-btn mr-10 _KW78x type-neutral shape-round ghost-text']"
+  # 复制至弹窗title
+  copy_title: "div[class='ant-modal-title']"
+  # 复制成功toast提示
+  copy_successful_toast: "body > div.tz-message.type-success.visible > div > span"
+  # 复制至弹窗新建素材组button
+  copy_new: "button[class='tz-btn display-flex flex-align-items-center type-primary shape-round ghost-text']"
+  # 复制至弹窗，新建素材组输入框input
+  copy_input: "input[class='ant-input _zEupn']"
+  # 复制至弹窗，新建素材组确认button
+  copy_new_confirm: "button[class='tz-btn type-primary shape-circle size-xs icon-button']"
+  # 复制至弹窗搜索框下拉列表第一个
+  copy_search_result: "[class='ant-select-dropdown-menu-item ant-select-dropdown-menu-item-active']>div>div"
+  # 分享记录弹窗关闭按钮
+  share_records_close: "span[class='ant-modal-close-x']"
+  # 素材组搜索输入框
+  search_in_group: "input[class='ant-input']"
+  # 素材组搜索框placeholder
+  placeholder: "[placeholder]"
+  # 素材组搜索输入框清空按钮
+  search_text_clear: "[class='tui-input-suffix']>div>i"
+  # 素材组内搜索搜索结果面包屑
+  search_result_level: "[class='_mai-F undefined ant-breadcrumb']>span:nth-child(3)>span"
+  # 面包屑：第一层级
+  Crumb_level1: "[class='_CENKU _csIn1']>div>div>div>div>div>span:nth-child(2)>span>a"
+  # 面包屑：第二层级
+  Crumb_level2: "[class='_mai-F undefined ant-breadcrumb']>span:nth-child(3)>span>a"
+  # 订阅成功 toast message
+  successful_subscribed_toast: "text=订阅成功，每周三10:00将邮件通知更新"
+  # 取消订阅 toast message
+  cancle_subscribed_toast: "body > div.tz-message.type-success.visible > div > span"
+  # 收藏成功 toast message
+  successful_collected_toast: "text='你已成功收藏该素材组'"
+  # 取消收藏 toast message
+  cancle_collected_toast: "text='你已取消收藏该素材组'"
+  # 删除成功 toast message
+  successful_deleted_toast: "[class='tz-message type-success visible']>div>span"
+  # 素材组切换列表视图按钮
+  group_list_view: "[class='ant-radio-group ant-radio-group-outline ant-radio-group-small']>label:nth-child(2)"
+  # 素材组列表表头-素材组
+  group_list_view_group: "[class='ant-tabs-bar ant-tabs-top-bar ant-tabs-card-bar']>div>div>div>div>div>div:nth-child(1)"
+  # 素材组列表表头-素材
+  group_list_view_asset: "[class='ant-tabs-bar ant-tabs-top-bar ant-tabs-card-bar']>div>div>div>div>div>div:nth-child(2)"
+  # 素材组列表视图-进入子组button
+  group_list_enter_button: "#content > div.ant-tabs.ant-tabs-top._3aRMV.type-card.ant-tabs-card.ant-tabs-no-animation > div.ant-tabs-content.ant-tabs-content-no-animated.ant-tabs-top-content.ant-tabs-card-content > div.ant-tabs-tabpane.ant-tabs-tabpane-active > div._2EIXk > div > div > div > div > div > div > div > div.ant-table-body > table > tbody > tr > td:nth-child(2) > div > span"
+  # 素材组切换平铺视图按钮
+  group_grid_view: "[class='ant-radio-group ant-radio-group-outline ant-radio-group-small']>label:nth-child(1)"
+  # 素材组切换多维视图按钮
+  group_kanban_view: "[class='ant-radio-group ant-radio-group-outline ant-radio-group-small']>label:nth-child(3)"
+  # 多维视图切换分组方式组件
+  kanban_show_way: "[id='for-help-popup-multidimensional-view-switch']"
+  # 多维视图分组方式组件text
+  kanban_text: "[class='_GFND+']"
+  # 多位视图分组方式下拉列表
+  kanban_deopdown: "[class='ant-dropdown-menu-item ant-dropdown-menu-item-selected']"
+  # 列表视图下进入素材组
+  enter_group_list: "[class='_xlPct']>span"
+  # 排序组件
+  sort: "[class='_kHj7Q ant-dropdown-trigger']"
+  # 排序组件text
+  sort_text: "[class='_qMAqr']"
+  # 排序-更新时间
+  sort_update_time: "[class='drop-select-wrap']>div:nth-child(1)>div>span"
+  # 排序-最近打开
+  sort_recent: "div[class='drop-select-wrap']>div:nth-child(2)>div>span"
+  # 排序-素材热度
+  sort_asset_hot: "[class='drop-select-wrap']>div:nth-child(3)>div>span"
+  # 排序-历史总活跃
+  sort_history_hot: "[class='drop-select-wrap']>div:nth-child(4)>div>span"
+  # 排序-名称排序
+  sort_name: "[class='drop-select-wrap']>div:nth-child(5)>div>span"
+  # 排序-创建时间
+  sort_create_time: "[class='drop-select-wrap']>div:nth-child(6)>div>span"
+  # 排序-升降序
+  sort_asc_desc: "[class='anticon _pRMwQ _OWSUP']"
+  # 升序组件-升降序text
+  asc_desc_text: "[class='ant-tooltip-inner']"
+  # 详情页权限组件
+  auth_selected: ".mt-4 div div .tui-select-wrap .ant-select-show-arrow .ant-select-selection .ant-select-selection__rendered"
+  # 个人管理素材
+  personal_asset: "text=个人管理素材"
+  # 上传重名素材提示弹窗-为后续所有冲突执行此操作
+  upload_repeat_title: "text=为后续所有冲突执行此操作"
+  # 为后续所有冲突执行此操作checkbox
+  Follow-up_checkbox: "[class='batch_action mt-32']>label>span:nth-child(1)>input"
+  # 跳过button
+  jump_over: "text=跳过"
+  # 替换原文件button
+  replace_original_file: "text=替换原文件"
+  # 保存两者button
+  save_both: "text=保存两者"
+  # 筛选-创建者/创建部门 dropdown
+  filter_mycreated_dropdown: "[class='_6tvLT']>div:nth-child(2)>div"
+  # 筛选-我创建的素材checkbox
+  filter_mycreated_checkbox: "[class='_dSgEE']>label>span:nth-child(1)>input"
+  # 筛选-我创建的素材-搜索输入框
+  filter_mycreated_search: "[class='ant-select ant-select-enabled ant-select-allow-clear ant-select-no-arrow']"
+  # 筛选-我创建的素材-text输入
+  filter_search_text: "div[role=\"combobox\"] input"
+  # 搜索结果选项
+  mycreated_search_result: "[class='_caQzA']"
+  # 断言-我部门筛选结果
+  assert_filter_dept: "[class='ant-select-selection__choice__content']>div>div"
+  # 筛选-文件格式
+  filter_file_format: "text=类型"
+  # 筛选-图片
+  filter_pic: "div[role='button']:has-text('图片')"
+  # 筛选-JPG
+  filter_JPG: "[class='ant-collapse-content-box']>div>div:nth-child(1)>div>label>span>input"
+  # 筛选-创建时间
+  filter_create_time: "text=创建时间"
+  # 筛选-最近七天
+  filter_recent_radio: "text=今天最近7天本月上月 >> :nth-match(input[type=\"radio\"], 2)"
+  # 筛选-日期时间组件
+  filter_datetime: "[placeholder=\"开始时间\"]"
+  # 日期时间组件-下一年
+  filter_next_year: ".ant-calendar-range-part.ant-calendar-range-right div:nth-child(2) .ant-calendar-header div .ant-calendar-next-year-btn"
+  # 开始日期
+  filter_start_day: "text=17"
+  # 结束日期
+  filter_end_day: ":nth-match(:text(\"15\"), 3)"
+  # 清除筛选
+  filter_clear: "[class='color-primary _SuvM1']"
+  # 筛选-收起
+  filter_fold: "text=收起"
+  # 筛选-展开
+  filter_unfold: "text=展开"
+  # 批量操作-全选
+  all_checkbox: "input[class='ant-checkbox-input']"
+  # 批量操作-下载下拉dropdown
+  download_dropdown: "[id='group-info-wrapper']>div:nth-child(2)>div>div:nth-child(1)"
+  # 批量操作-下载button
+  download_button: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(1)>button"
+  # 批量操作-下载附件button
+  download_all_button: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(2)>button"
+  # 批量操作-下载附件指定尺寸和大小
+  download_specify_size: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(3)>button"
+  # 批量操作-下载指定大小输入框
+  download_specify_size_input: "[placeholder=\"最大不能超过 10240KB\"]"
+  # 等比缩放尺寸开关
+  zoom_switch_button: "button[role=\"switch\"]"
+  # 按宽缩放输入框
+  zoom_base_length: "[placeholder=\"请输入小于等于3120的整数\"]"
+  # 批量操作-下载指定大小-下载button
+  download_specify_button: "[class='tz-btn type-primary shape-round']"
+  # 下载弹窗断言
+  download_size_assert : "text=等待过程中您可以打开新窗口继续工作"
+  # 批量操作-分享button
+  batch_share_button: "[id='group-info-wrapper']>div:nth-child(2)>div>div:nth-child(2)"
+  # 批量操作-分享-创建链接button
+  batch_create_link: "[class='tui-input-wrap with-suffix disabled']>div>button"
+  # 链接创建成功toast提示
+  batch_link_successful_toast: "text=链接创建并复制成功，快去分享吧～"
+  # 批量操作-编辑button
+  batch_edit: "[id='group-info-wrapper']>div:nth-child(2)>div>div:nth-child(3)"
+  # 描述输入框
+  edit_description_input: "textarea"
+  # 所属品牌品类radio - 无
+  none_radio: "//*[@id='content-container']/div/div[1]/div[2]/div/div[5]/div/div[2]/div/div/label[2]/span[1]/input"
+  # 权限维度组件
+  edit_auth: "text=点击添加部门/维度/成员"
+  # 权限弹窗取消button
+  edit_auth_cancel_button: "div[role=\"document\"] >> text=取消"
+  # 保存修改项button
+  edit_save: "text=保存修改项"
+  # 二次确认弹窗好的button
+  second_popup_sure: "text=好的"
+  # 编辑保存成功toast提示
+  edit_save_successful_toast: "text=保存成功"
+  # 批量操作-重命名button
+  batch_rename: "[id='group-info-wrapper']>div:nth-child(2)>div>div:nth-child(4)"
+  # 批量操作-批量重命名弹窗名称输入框
+  batch_rename_name_input: "[placeholder=\"可点选下列关键信息引用/手动输入其他信息\"]"
+  # 品牌标签
+  batch_rename_brand_tag: "div[role=\"document\"] >> text=品牌"
+  # 数字升序
+  batch_rename_asc: "text=数字升序↑"
+  # 确认重命名button
+  batch_rename_confirm: "button:has-text(\"重命名\")"
+  # 重命名成功toast提示
+  rename_successful_toast: "text=重命名成功"
+  # 加入素材蓝button
+  batch_add_to_basket: "[id='group-info-wrapper']>div:nth-child(2)>div>div:nth-child(7)"
+  # 加入素材篮成功断言提示
+  add_basket_successful: "text=已成功加入素材篮"
+  # 二次加入素材篮已存在断言提示
+  add_basket_again: "text=该素材已存在于素材篮"
+  # 批量操作-添加到button
+  batch_add_to_group: "[id='group-info-wrapper']>div:nth-child(2)>div>div:nth-child(5)"
+  # 仅查看我创建的checkbox
+  only_my_checkbox: "[class='_6s7ty']>label>span:nth-child(1)>input"
+  # 列表第一个素材组
+  add_first_group: "[class='_q100S']>ul>li>ul>li:nth-child(1)>span:nth-child(2)"
+  # 复制至...确认button
+  add_confirm_button: "[class='tz-btn _KW78x _v5EYw type-primary shape-round']"
+  # 复制成功toast提示断言
+  copy_successful: "text=已复制成功"
+  # 批量操作-移动到button
+  batch_move_button: "[id='group-info-wrapper']>div:nth-child(2)>div>div:nth-child(6)"
+  # 移动二次确认弹窗-确认button
+  second_confirm_button: "[class='tz-btn type-primary shape-round']"
+  # 移动到自身的素材组
+  move_to_specify_group: "div[role=\"document\"] ul[role=\"group\"] >> text=杨伦-UI自动化测试-编辑"
+  # 批量操作-移动成功toast提示
+  batch_move_successful: "text=移动成功"
+  # 批量操作-···
+  batch_more: "[id='group-info-wrapper']>div:nth-child(2)>div>div:nth-child(10)"
+  # 批量操作-修改所有者button
+  batch_change_owner: "text=修改所有者"
+  # 修改所有者搜索框
+  change_owner_search: "text=请输入姓名搜索"
+  # 修改所有者搜索输入框input
+  change_owner_input: "text=请输入姓名搜索 取消确认 >> input"
+  # 搜索结果选项
+  search_result: "li[role=\"option\"] >> text=杨伦"
+  # 确认修改所有者按钮button
+  change_owner_confirm: "button[class='tz-btn type-primary shape-round']"
+  # 修改所有者成功后toast提示-断言
+  owner_successful_toast: "text=已成功修改素材所有者为 杨伦 ，系统将会发送通知给原素材所有者及 杨伦"
+  # 批量操作-赋权给组内成员button
+  batch_empowerment: "text=赋权给组内成员"
+  # 批量操作-修改权限类型button
+  batch_permission_type: "text=修改权限类型"
+  # 组内权限（可编辑/删除）drop_down
+  empowerment_dropdown: "[class='tz-btn ant-dropdown-trigger type-primary shape-round ghost-text-hover']"
+  # 赋权选项-可下载
+  empowerment_download: "text=可下载 - 包含查看权限，不可编辑/删除"
+  # 确认赋权-我知道了
+  empowerment_confirm: "[class='tz-btn type-primary shape-round']"
+  # 成功赋权toast提示-断言
+  empowerment_sucess_toast: "text=已成功赋权给组内成员"
+  # 修改权限类型dropdown
+  permission_type_dropdown: "text=请选择要修改的素材权限类型"
+  # 自定义权限类型item
+  self_permission_type: "text=自定义权限"
+  # 成功赋权toast提示-断言
+  permission_sucess_toast: "text=已成功修改素材权限类型"
+  # 批量操作组件关闭button
+  batch_close: "[id='group-info-wrapper']>div:nth-child(2)>div>div:nth-child(12)"
+  # 批量操作-移除/删除素材
+  batch_remove_asset: "[id='group-info-wrapper']>div:nth-child(2)>div>div:nth-child(8)"
+  # 从系统中删除源文件checkbox
+  batch_delete_asset: "[class='mt-12']>label>span:nth-child(1)>input"
+  # 确认移除button
+  batch_delete_confirm: "[class='foot-action action-ok type-danger']"
+  # 扫码分享button
+  share_QR_code: "[class='_G4c8k']>button:nth-child(2)"
+  # 邮件分享button
+  share_by_email: "[class='_G4c8k']>button:nth-child(3)"
+  # 分享弹窗-分享设置button
+  share_set_button: "[class='tz-btn _M8E7t type-primary shape-round ghost-text']"
+  # 水印展开设置button
+  share_watermark_set: "[class='ml-16 _Wt+ee']"
+  # 开启水印开关
+  share_watermark_open: "[class='mt-8 mb-8 display-flex flex-align-items-center flex-justify-content-space-between']>div:nth-child(2)>button"
+  # 开启附件开关
+  share_attach_file_open: "[class='_MT44a']>div:nth-child(1)>div:nth-child(5)>div:nth-child(1)>div:nth-child(2)>button"
+  # 开启访问密码开关
+  share_password_open: "[class='_MT44a']>div:nth-child(1)>div:nth-child(6)>div:nth-child(1)>div:nth-child(2)>div>button"
+  # 添加分享备注开关
+  share_remark_open: "[class='_MT44a']>div:nth-child(1)>div:nth-child(7)>div:nth-child(1)>div:nth-child(2)>button"
+  # 分享备注输入框
+  share_remark_textarea: "[placeholder='请输入分享备注信息']"
+  # 展开分享设置的后的创建链接button
+  share_create_link_set: "[class='_ogDJB']>button:nth-child(2)"
+
+
+
+
+# 全部素材组页面
+AllCollectionPage:
+  # 视图切换-列表
+  view_list: "[class='ant-radio-group ant-radio-group-outline ant-radio-group-small']>label:nth-child(2)>span:nth-child(2)>i"
+  # 素材组列表视图-素材组名称title
+  group_list_title: "[class='ant-table-thead']>tr>th:nth-child(1)>span>div>span:nth-child(1)"
+  # 列表视图下进入素材组
+  enter_group_list: "text=UI自动化测试-YL"
+  # 素材组内列表视图表头名称title
+  group_list_name: "[class=' ant-tabs-tab ant-tabs-tab-disabled']"
+  # 视图切换-平铺
+  view_tile: "[class='ant-radio-group ant-radio-group-outline ant-radio-group-small']>label:nth-child(1)>span:nth-child(2)>i"
+  # 进入列表第一个素材组内
+  all_enter_collection: "[class='ant-row']>div:nth-child(1)>div>div:nth-child(2)"
+  # 排序组件
+  sort: "[class='_kHj7Q ant-dropdown-trigger']"
+  # 排序组件text
+  sort_text: "[class='_qMAqr']"
+  # 排序-更新时间
+  sort_update_time: "[class='drop-select-wrap']>div:nth-child(1)>div>span"
+  # 排序-最近打开
+  sort_recent: "div[class='drop-select-wrap']>div:nth-child(2)"
+  # 排序-素材热度
+  sort_asset_hot: "[class='drop-select-wrap']>div:nth-child(3)>div>span"
+  # 排序-历史总活跃
+  sort_history_hot: "[class='drop-select-wrap']>div:nth-child(4)>div>span"
+  # 排序-名称排序
+  sort_name: "[class='drop-select-wrap']>div:nth-child(5)>div>span"
+  # 排序-创建时间
+  sort_create_time: "[class='drop-select-wrap']>div:nth-child(6)>div>span"
+  # 排序-升降序
+  sort_asc_desc: "[class='anticon _pRMwQ _OWSUP']"
+  # 排序-升序hover text 断言
+  assert_asc_text: "text=升序"
+  # 排序-降序hover text 断言
+  assert_desc_text: "text=降序"
+  # 全部下新建素材组按钮
+  all_new_collection: "[class='tz-btn _sAtYC type-primary shape-round']"
+  # 取消新建素材组按钮
+  cancel_button: "[class='text-right']>button:nth-child(1)"
+  # 确认新建素材组按钮
+  confirm_button: "[class='text-right']>button:nth-child(2)"
+  # 组名输入框
+  name_input: "[id='groupName']"
+  # 描述输入框
+  description_input: "[id='description']"
+  # ... 更多
+  all_more: "[class='anticon anticon-icon-more _DNPcn ant-dropdown-trigger undefined _BwHXf']"
+  # 删除素材组button
+  all_delete_collection: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(7)>button"
+  # 弹窗确认删除button
+  all_confirm_delete_collection: "[class='foot-action action-ok type-danger']"
+  # 素材组搜索输入框
+  all_search_in_group: "input[class='ant-input']"
+  # 素材组搜索输入框清空按钮
+  all_search_text_clear: "[class='tui-input-suffix']>div>i"
+  # 搜索结果全部面包屑
+  search_all_level: "[class='_mai-F undefined ant-breadcrumb']>span:nth-child(1)>span>a"
+  # 进入素材组后全部面包屑
+  collection_all_level: "[class='_mai-F undefined ant-breadcrumb']>span:nth-child(1)>span>a"
+  # 素材组卡片收藏icon
+  collect_button: "[class='ant-row']>div:nth-child(1)>div>div:nth-child(1)>div:nth-child(2)>div>i"
+  # 收藏成功toast提示
+  collect_successful_toast: "body > div.tz-message.type-success.visible > div > span"
+  # 右键新建素材组触发区域
+  trigger_area: "[class='_nFIvK']"
+  # 右键新建素材组button
+  right_create_group: "[role='menuitem']>button"
+  # 右键-新标签页打开button
+  right_new_tab: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(1)>button"
+  # 右键-编辑信息
+  right_edit: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(2)>button"
+  # 右键-订阅
+  right_subscribe: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(3)>button"
+  # 右键-收藏
+  right_collect: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(4)>button"
+  # 右键-分享
+  right_share: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(5)>button"
+  # 右键-复制素材组
+  right_copy: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(6)>button"
+  # 右键-移动素材组
+  right_move: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(7)>button"
+  # 右键-下载
+  right_download: "[class='ant-dropdown-menu-submenu-title']"
+  # 右键-下载素材组
+  right_download_group: "text=下载素材"
+  # 下载空素材组toast提示
+  right_download_toast: "text=当前选中了0个素材，请重新选择"
+  # 右键-删除素材组
+  right_delete: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(9)>button"
+  # 订阅成功toast提示
+  right_subscribed_toast: "text=订阅成功，每周三10:00将邮件通知更新"
+  # 取消订阅成功toast提示
+  right_cancel_subscribe: "text=取消成功"
+  # 收藏成功 toast message
+  right_collected_toast: "text=你已成功收藏该素材组"
+  # 取消收藏素材组 toast message
+  right_cancel_collect: "text=你已取消收藏该素材组"
+  # 分享空素材组toast提示
+  right_share_blank_group_toast: "text=请先添加素材"
+  # 复制弹窗搜索输入框placeholder
+  copy_search_text: "text=输入素材组名称搜索"
+  # 复制弹窗搜索文本输入框
+  copy_search_input: "[class='ant-select-search__field__wrap']>input"
+  # 目标素材组
+  copy_target_group: "[class='fz-12 color-text-light']"
+  # 复制-确认button
+  copy_confirm_button: "[class='tz-btn _KW78x _v5EYw type-primary shape-round']"
+  # 复制至自身toast提示
+  copy_to_self_toast: "text=不能复制到自身或其子素材组内"
+  # 移动二次确认button
+  copy_second_confirm_button: "[class='tz-btn type-primary shape-round']"
+  # 批量操作-移动成功toast提示
+  copy_move_successful: "text=操作成功"
+  # 删除二次弹窗确认button
+  right_delete_confirm: "[class='foot-action action-ok type-danger']"
+  # 删除称号toast提示
+  right_delete_toast: "[class='message-text']"
+  # 素材组封面图-上传button
+  group_cover_pic_upload: "[class='file-select']>div"
+  # 获取封面图url
+  group_cover_pic_url: "[class='ant-row']>div:nth-child(1)>div>div:nth-child(1)>div:nth-child(1)>div>div>div>img"
+  # 删除封面图
+  group_cover_pic_clear: "[class='ant-form ant-form-horizontal']>div:nth-child(3)>div:nth-child(2)>div>span>div>div:nth-child(1)>div"
+  # 删除封面图后的断言
+  group_cover_pic_clear_assert: "[class='ant-row']>div:nth-child(1)>div>div>div>div>div>img"
+
+  # 素材组协作者页面
+CollaboratorsPage:
+  # 我创建的第一个素材组
+  my_enter_collection: "[class='ant-row']>div:nth-child(1)>div>div:nth-child(2)"
+  # 添加协作者button
+  add_partner: "[id='group-info-wrapper']>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-child(1)>button"
+  # 协作者弹窗title
+  partner_win_title: "text=权限互斥时，赋予该成员最高权限"
+  # 协作者搜索框
+  search_collaborators: "[placeholder=\"请输入信息搜索成员或部门\"]"
+  # 搜索文本输入框
+  search_text_input: "[class='ant-modal-body']>div>div:nth-child(1)>div>span>input"
+  # 左侧搜索结果部门/维度/成员标识
+  dept_dimension: "[class='ant-modal-body']>div>div:nth-child(1)>div>div>div:nth-child(1)>div>div:nth-child(1)"
+  # 企业成员下拉arrow
+  tree_dept_arrow: "[class='ant-collapse ant-collapse-borderless ant-collapse-icon-position-left']>div:nth-child(1)>div>i"
+  # 外部联系人成员下拉arrow
+  tree_outer_arrow: "[class='ant-collapse ant-collapse-borderless ant-collapse-icon-position-left']>div:nth-child(2)>div>i"
+  # 部门维度
+  tree_dept_dime_button: "text=按部门维度"
+  # 部门树列表第一个部门
+  tree_dept: "[class='ant-modal-body']>div>div:nth-child(1)>div>div>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(1)>div>div"
+  # 人员树列表第一个员工checkbox
+  tree_first_staff: "[class='ant-modal-body']>div>div:nth-child(1)>div>div>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(1)>label>span>input"
+  # 添加部门checkbox
+  add_dept: "[class='ant-modal-body']>div>div:nth-child(1)>div>div>div:nth-child(1)>div>div:nth-child(2)>div:nth-child(1)>label>span>input"
+  # 协作权限组件
+  authority_dropdown: "[class='ant-select-show-arrow ant-select ant-select-enabled']"
+  # 分享权限
+  auth_share: "[class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']>li:nth-child(2)"
+  # 分享权限text
+  auth_share_text: "[class='ant-select-show-arrow ant-select ant-select-enabled']>div>div>div"
+  # 移除协作者button
+  remove_button: "text=移除"
+  # 取消button
+  cancel_button: "[class='ant-modal-footer']>div>button:nth-child(2)"
+  # 确认button
+  confirm_button: "[class='ant-modal-footer']>div>button:nth-child(3)"
+  # 协作者人数
+  collaborator_num: "[id='group-info-wrapper']>div>div:nth-child(2)>div>div:nth-child(2)>div:nth-child(1)>button>span"
+
+
+# 分享落地页
+ShareLandingPage:
+  # 分享按钮
+  land_share_button: "[id='group-info-wrapper']>div>div:nth-child(2)>div>div:nth-child(2)>button:nth-child(2)"
+  # 分享权限组件dropdown
+  land_share_auth: "[class='display-flex flex-align-items-center mr-16 _M8E7t ant-dropdown-trigger']"
+  # 权限类型-系统内用户-可查看
+  land_internal_view_only: "text=分享给系统内用户 - 可查看"
+  # 权限类型-系统内用户-可下载
+  land_internal_can_download: "text=分享给系统内用户 - 可下载"
+  # 权限类型-互联网用户-可查看
+  land_visitor_view_only: "text=分享给互联网上用户(无需登录) - 可查看"
+  # 权限类型-互联网用户-可下载
+  land_visitor_can_download: "text=分享给互联网上用户(无需登录) - 可下载"
+  # 链接有效期组件
+  land_link_valid: "[class='display-flex flex-align-items-center _M8E7t ant-dropdown-trigger']"
+  # 链接有效期-永久有效
+  land_link_never_expires: "text=永久有效"
+  # 链接有效期-7天有效
+  land_link_7_days: "text=7天有效"
+  # 链接有效期-24小时有效
+  land_link_24_hours: "text=24小时有效"
+  # 创建链接button
+  land_create_link: "[class='tui-input-wrap with-suffix disabled']>div>button"
+  # 提取链接
+  land_get_link_url: "[class='ant-input ant-input-disabled']"
+  # 分享落地页-登录button
+  share_login: "[class='tz-btn type-primary shape-round']"
+  # 分享落地页-打包下载
+  share_page_download : "[class='tz-btn display-flex type-primary shape-round size-normal']"
+  # 下载弹窗断言
+  share_download_assert: "text=等待过程中您可以打开新窗口继续工作"
+  # 多维视图tab
+  share_kanban_view: "[class='ant-radio-group ant-radio-group-outline ant-radio-group-small']>label:nth-child(2)"
+  # 平铺视图tab
+  share_tile_view: "[class='ant-radio-group ant-radio-group-outline ant-radio-group-small']>label:nth-child(1)"
+  # 多维视图断言
+  kanban_view_assert: "[class='_6med0']"
+  # 排序组件
+  share_sort: "[class='_OavxY ant-dropdown-trigger']"
+  # 排序组件text
+  share_sort_text: "[class='_OavxY ant-dropdown-trigger']>span"
+  # 排序-更新时间
+  share_sort_update_time: "[class='drop-select-wrap']>div:nth-child(1)>span"
+  # 排序-最近打开
+  share_sort_recent: "[class='drop-select-wrap']>div:nth-child(2)>span"
+  # 排序-素材热度
+  share_sort_asset_hot: "[class='drop-select-wrap']>div:nth-child(3)>div>span"
+  # 排序-历史总活跃
+  share_sort_history_hot: "[class='drop-select-wrap']>div:nth-child(4)>div>span"
+  # 排序-名称排序
+  share_sort_name: "[class='drop-select-wrap']>div:nth-child(5)>span"
+  # 排序-创建时间
+  share_sort_create_time: "[class='drop-select-wrap']>div:nth-child(6)>span"
+  # 排序-升降序
+  share_sort_asc_desc: "//*[@class='ant-radio-group ant-radio-group-outline ant-radio-group-small']/../div[2]/i"
+  # 格式组件
+  share_format: "text=格式"
+  # 图片checkbox
+  pic_checkbox: "text=图片"
+  # 格式筛选断言
+  format_filter_assert: "[class='_UL+TJ _+uup9']>div>span"
+  # 创建时间组件
+  create_time: "[class='_zhFUC action-fiexd']>div:nth-child(1)>div:nth-child(4)>div"
+  # 最近7天checkbox
+  latest_7_days: "text=最近7天"
+  # 搜索框
+  share_page_search: "[class='ant-select-sm ant-select ant-select-enabled ant-select-allow-clear ant-select-no-arrow']"
+  # 分享落地页-搜索输入框
+  share_page_search_input: "text=输入素材或素材组名称 批量操作 >> input"
+  # 搜索素材后断言
+  search_asset_assert: "[class='mb-16 material_title mt-16']"
+  # 搜索素材组后断言
+  search_group_assert: "[class='mb-16 material_title mt-16']"
+  # 进入素材详情页
+  share_asset_detail: "[id='exposure-content-1007898']>div>div>div:nth-child(3)>div>div"
+  # 进入详情页断言
+  asset_detail_assert: "[class='ant-tabs-tab-active ant-tabs-tab']>div"
+  # 关闭详情页弹窗
+  asset_detail_close: "[class='_9hg0Y _CXkwL']"
+  # 详情页下载素材button
+  asset_detail_download: "[class='ant-btn ant-btn-primary']"
+  # 评论tab
+  comment_tab: "[class='ant-tabs-nav ant-tabs-nav-animated']>div>div:nth-child(2)>div"
+  # 暂无评论断言
+  no_comment_assert: "[class='ant-empty-description']"
+  # 素材详情页-评论tab登录button
+  comment_tab_login: "[class='tz-btn edit-comment-login type-primary shape-round']"
+  # 跳转登录断言
+  share_login_assert: "[class='name___3q0GD']"
+  # 下一个素材arrow
+  share_next_asset: "[class='_9hg0Y _ubrMt']>i"
+  # 上一个素材arrow
+  share_pre_asset: "[class='_9hg0Y _ubrMt']>i"
+  # 素材切换断言
+  share_asset_toggle_assert: "[class='tui-tooltip-text undefined']"
+  # 批量操作button
+  batch_button: "[class='tz-btn type-primary shape-round size-small ghost-solid']"
+  # 全选checkbox
+  share_all_checkbox: "[class='ant-checkbox-input']"
+  # 批量操作-下载button
+  share_batch_download: "[class='tz-btn display-flex type-primary shape-round size-small']"
+  # 第一个素材组radio
+  share_group_radio: "[class='_J6vHB _QhdIn']"
+  # 第一个素材radio
+  share_asset_radio: "#exposure-content-1007898 > div > div > div.cursor-pointer.display-block.position-absolute.check-box > div"
+  # 空素材组
+  share_blank_group: "text=空素材组"
+  # 下载空素材组断言
+  download_blank_assert: "text=当前选中了0个素材，请重新选择"
+  # 进入第一个素材组触发热区
+  share_enter_group: "[class='_IxWDG']"
+  # 一级面包屑
+  share_first_level: "[class='display-flex flex-wrap ant-breadcrumb']>span:nth-child(1)>span:nth-child(1)"
+  # 二级面包屑
+  share_second_level: "[class='display-flex flex-wrap ant-breadcrumb']>span:nth-child(2)>span:nth-child(1)>a"
+  # 面包屑断言
+  bread_crumbs_assert: "[class='explorer_path_describe color-text-light']"
+  # 分享落地页-游客页面登录button
+  visitor_login: "[class='fz-14 color-white']"
+  # 国际化button
+  globalization_button: "[class='display-flex flex-align-items-center cursor-pointer']>div:nth-child(1)>i"
+  # 国际化断言
+  globalization_assert: "text=Bulk Selection"
+
+#全部素材组下搜索后的页面元素
+AfterSearchPage:
+  #搜索输入框
+  search_input_in: "[placeholder='输入素材或素材组名称']"
+  #搜索后全部
+  search_all: "[class='_mai-F undefined ant-breadcrumb']>span:nth-child(1)>span>a"
+  #搜索后的标题判断是素材组还是素材
+  search_title: "[id='search-content']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>span"
+  #搜索后第一个素材组或素材
+  search_first: "[id='search-content']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)"
+  #搜索后第一个是素材组的更多...按钮元素
+  search_more_group: "[class='ant-row']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)"
+  #搜索后第一个是素材的更多...按钮元素
+  search_more_asset: "[class='ant-row']>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>div:nth-child(3)"
+
+  #搜索后第一个是素材组的更多按钮中的新标签页打开(素材组和素材通用)
+  search_newpage: "text=新标签页打开"
+  #搜索后第一个是素材组的更多按钮中的编辑信息
+  search_edit_group: "text=编辑信息"
+  #搜索后第一个是素材组的更多按钮中的编辑信息-确定
+  search_edit_group_true: "[class='text-right']>button:nth-child(2)"
+  #搜索后第一个是素材组的更多按钮中的订阅/取消订阅
+  search_subscribe: "text=订阅"
+  search_subscribe_toast: "body > div.tz-message.type-success.visible > div > span"
+  #搜索后第一个是素材组的更多按钮中的收藏/取消收藏
+  search_collection: "text=收藏"
+  search_collection_toast: "body > div.tz-message.type-success.visible > div > span"
+  #搜索后第一个是素材组的更多按钮中的分享-创建链接-复制-复制成功(素材组和素材通用)
+  search_share: "text=分享"
+  search_share_confirm: "text=创建链接"
+  search_share_copy: "text=复制"
+  search_share_toast: "body > div.tz-message.type-success.visible > div > span"
+  #搜索后第一个是素材组的更多按钮中的复制素材组-确定-已复制成功
+  search_copy: "text=复制素材组"
+  search_copy_confirm: "text=确定"
+  search_copy_group_toast: "body > div.tz-message.type-success.visible > div > span"
+  #搜索后第一个是素材组的更多按钮中的下载-下载素材
+  search_download_group: "text=下载"
+  search_download1_asset: "text=下载素材"
+  #搜索后第一个是素材组的更多按钮中的删除素材组-确定
+  search_delete: "text=删除素材组"
+  search_delete_confirm: "[class='foot-action action-ok type-danger']"
+  search_delete_toast: "body > div.tz-message.type-success.visible > div > span"
+
+  #搜索后第一个是素材的更多按钮中的重命名-原名称-重命名-继续-重命名成功
+  search_rename: "text=重命名"
+  search_rename_old: "text=原名称"
+  search_rename_confirm: "[class='tz-btn type-primary shape-round size-middle']"
+  search_rename_continue: "[class='tz-btn type-primary shape-round size-small']"
+  search_rename_toast: "body > div.tz-message.type-success.visible > div > span"
+  #搜索后第一个是素材的更多按钮中的编辑-保存素材
+  search_edit_asset: "text=编辑"
+  search_edit_asset_confirm: "[class='tz-btn type-primary shape-round']"
+  search_edit_asset_cancel: "[class='tz-btn type-neutral shape-round']"
+  #搜索后第一个是素材的更多按钮中的下载
+  search_download2: "text=下载"
+  search_download2_asset: "text=下载"
+  #搜索后第一个是素材的更多按钮中的添加到组-选素材组-点击确定-提示
+  search_add_group: "text=添加到组"
+  search_add_group_ry: "[class='ant-modal-body']>div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(1)>ul:nth-child(1)>li:nth-child(1)>ul>li:nth-child(1)"
+  search_add_group_confirm: "text=确定"
+  search_add_group_toast: "body > div.tz-message.type-success.visible > div > span"
+  #搜索后第一个是素材的更多按钮中的加入素材篮-清空素材篮
+  search_add_basket: "text=加入素材篮"
+  search_add_basket_toast: "body > div.tz-message.type-success.visible > div > span"
+  search_basket: "[id='nav-header-right-node']>div:nth-child(1)>div:nth-child(2)"
+  search_basket_empty: "[class='empty_text']"
+  #搜索后第一个是素材的更多按钮中的修改所有者
+  search_owner: "text=修改所有者"
+  search_owner_ry: "[class='ant-select-selection__placeholder']"
+  search_owner_choice: "[class='ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical']>li:nth-child(1)"
+  search_owner_confirm: "[class='ant-modal-content']>div:nth-child(3)>div>div:nth-child(2)>button:nth-child(2)"
+  search_owner_cancel: "[class='ant-modal-content']>div:nth-child(3)>div>div:nth-child(2)>button:nth-child(1)"
+  #搜索后第一个是素材的更多按钮中的修改权限类型
+  search_type: "text=修改权限类型"
+  search_type_confirm: "[class='tz-btn type-primary shape-round']"
+  #搜索后第一个是素材的更多按钮中的删除
+  search_delete_asset: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(9)"
+
+  #搜索后有素材组，获取第二个素材组
+  search_second: "[id='search-content']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)"
+  #搜索后只有素材，获取第二个素材
+  search_Multiple_second: "[id='search-content']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)"
+  #搜索后有素材组的多选按钮点击选择第一个素材组、只有素材也可以用点击第一个素材
+  search_Multiple_choice1: "[id='search-content']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)"
+  #搜索后有素材组，多选按钮点击选择第二个素材组的选择按钮
+  search_Multiple_choice2: "[id='search-content']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)"
+  #搜索后只有素材，多选按钮点击选择第二个素材的选择按钮
+  search_Multiple_choice2_asset: "[id='search-content']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)"
+  #全部素材组下搜索后批量操作下载按钮
+  search_Multiple_download_group: "[class='cache-route']>div:nth-child(1)>div:nth-child(1)>div:nth-child(5)>div>div:nth-child(1)"
+  #全部素材组下搜索后批量操作下载-下载
+  search_Multiple_download_group1: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(1)>button"
+  #全部素材组下搜索后批量操作加入素材篮按钮
+  search_Multiple_basket: "[class='cache-route']>div:nth-child(1)>div:nth-child(1)>div:nth-child(5)>div>div:nth-child(2)"
+  search_Multiple_basket_group_toast: "body > div.tz-message.type-error.visible > div > span" #失败提示
+  search_Multiple_basket_asset_toast: "body > div.tz-message.type-success.visible > div > span" #成功提示
+  #全部素材组下搜索后批量操作取消按钮
+  search_Multiple_cancel: "[class='cache-route']>div:nth-child(1)>div:nth-child(1)>div:nth-child(5)>div>div:nth-child(3)"
+
+#有效期管理
+LifeCyclePage:
+  #添加按钮
+  add_Lifecycle_button: "[class='tz-btn ml-12 type-primary shape-round']"
+  #标签规则名称输入
+  add_Lifecycle_inputname: "[class='ant-modal-body']>div:nth-child(2)>div:nth-child(2)>input"
+  #条件字段
+  add_Lifecycle_condition: "[class='ant-select-selection__rendered']"
+  add_Lifecycle_choice: "text='ry自动化'"
+  add_Lifecycle_add_confirm: "text='发布'"
+  #日期
+  add_Lifecycle_date: "[class='ant-calendar-picker-input ant-input']"
+  #日期弹层
+  add_Lifecycle_date_popup_start: "[class='ant-calendar-cell ant-calendar-today']"
+  add_Lifecycle_date_popup_end: "[class='ant-calendar-cell ant-calendar-today ant-calendar-selected-start-date ant-calendar-selected-day']"
+  #发布
+  add_Lifecycle_release: "text='发布'"
+  #有效期管理标题
+  lifecycle_title: "[class='fw-bold font-20 color-text-dark']"
+  # 搜索
+  lifecycle_search_input: "[class='ant-input ant-input-sm']"
+  lifecycle_search_first: "[class='ant-table-tbody']>tr:nth-child(1)>td:nth-child(2)>div>div:nth-child(1)>div"
+  # 编辑
+  lifecycle_edit: "[class='ant-table-content']>div>div>table>tbody>tr>td:nth-child(6)>div>div:nth-child(2)"
+  lifecycle_edit_confirm: "text='发布'"
+  # 查看关联素材
+  lifecycle_related_material: "[class='ant-table-content']>div>div>table>tbody>tr>td:nth-child(6)>div>button"
+  # 删除
+  lifecycle_delete: "[class='ant-table-content']>div>div>table>tbody>tr>td:nth-child(6)>div>div:nth-child(1)"
+  lifecycle_delete_confirm: "[class='ant-modal tz-quick-modal tui-modal modal-fixed-close-btn']>div:nth-child(2)>div:nth-child(2)>button:nth-child(2)"
+  lifecycle_delete_toast: "body > div.tz-message.type-success.visible > div > span"
+
+
+# 素材组左侧树列表
+CollectionTreeListPage:
+  # 新建素材组➕button
+  tree_new_group: "[class='anticon anticon-icon-add-plus-sec _3-eSb']"
+  # 组名输入框
+  tree_name_input: "[id='groupName']"
+  # 描述输入框
+  tree_description_input: "[id='description']"
+  # 新建素材组确认button
+  tree_new_group_confirm: "[class='text-right']>button:nth-child(2)"
+  # 新建素材组取消button
+  tree_new_group_cancel: "[class='text-right']>button:nth-child(1)"
+  # 本地上传button
+  tree_upload_button: "[class='tz-btn type-neutral shape-round ghost-text']"
+  # 本地上传input上传
+  tree_upload_input: "[class='file-select']>div"
+  # 新建素材组-空判断断言
+  tree_blank_assert: "text=此为必填信息"
+  # 新建素材组-断言
+  tree_new_group_assert: "[class='_mai-F undefined ant-breadcrumb']>span:nth-child(2)>span:nth-child(1)>a"
+  # 树结构-第一个素材组热区
+  tree_enter_group: "[class='ant-tree ant-tree-icon-hide']>li:nth-child(1)>span:nth-child(2)>span>div"
+  # 树结构-第一个素材组右键下拉dropdown
+  tree_right_dropdown_first: "[class='ant-tree ant-tree-icon-hide']>li:first-child>span:nth-child(2)>span>div>div:nth-child(2)>div>i"
+  # 树结构进入素材组断言
+  tree_enter_group_assert: "[class='_mai-F undefined ant-breadcrumb']>span:nth-child(1)>span>a"
+  # 树结构展开button
+  tree_expand_fold: "[class='ant-tree ant-tree-icon-hide']>li:nth-child(1)>span:nth-child(1)"
+  # 进入第一个素材组的子组热区
+  tree_enter_sub_group: "[class='ant-tree-child-tree ant-tree-child-tree-open']>li:nth-child(1)>span:nth-child(2)>span>div>div:nth-child(1)"
+  # 第二层面包屑热区
+  tree_second_bread_crumb: "[class='_mai-F undefined ant-breadcrumb']>span:nth-child(2)>span:nth-child(1)"
+  # 全部面包屑
+  tree_all_bread_crumb: "[class='_mai-F undefined ant-breadcrumb']>span:nth-child(1)>span:nth-child(1)"
+  # 面包屑切换断言
+  tree_brand_crumb_assert: "[class='ant-tabs ant-tabs-top _QYBRr ant-tabs-line ant-tabs-no-animation']>div:nth-child(1)>div>div>div>div>div>div:nth-child(1)"
+  # 右键-下拉热区
+  tree_right_dropdown: "[class='ant-tree ant-tree-icon-hide']>li:last-child>span:nth-child(2)>span>div>div:nth-child(2)>div>i"
+  # 最后一个素材组-新标签页打开button
+  tree_new_tab: "[class='ant-dropdown  ant-dropdown-placement-topLeft ']>ul>li:nth-child(1)>button"
+  # 最后一个素材组-新建子素材组
+  tree_new_sub_group: "[class='ant-dropdown  ant-dropdown-placement-topLeft ']>ul>li:nth-child(2)>button"
+  # 最后一个素材组-编辑信息
+  tree_edit_group: "[class='ant-dropdown  ant-dropdown-placement-topLeft ']>ul>li:nth-child(3)>button"
+  # 最后一个素材组-订阅素材组
+  tree_subscribe_group: "[class='ant-dropdown  ant-dropdown-placement-topLeft ']>ul>li:nth-child(4)>button"
+  # 最后一个素材组-收藏素材组
+  tree_collect_group: "[class='ant-dropdown  ant-dropdown-placement-topLeft ']>ul>li:nth-child(5)>button"
+  # 最后一个素材组-分享素材组
+  tree_share_group: "[class='ant-dropdown  ant-dropdown-placement-topLeft ']>ul>li:nth-child(6)>button"
+  # 最后一个素材组-复制素材组
+  tree_copy_group: "[class='ant-dropdown  ant-dropdown-placement-topLeft ']>ul>li:nth-child(7)>button"
+  # 最后一个素材组-移动素材组
+  tree_move_group: "[class='ant-dropdown  ant-dropdown-placement-topLeft ']>ul>li:nth-child(8)>button"
+  # 最后一个素材组-删除素材组
+  tree_delete_group: "[class='ant-dropdown  ant-dropdown-placement-topLeft ']>ul>li:nth-child(10)>button"
+  # 定位最后一个素材组
+  tree_last_group: "[class='ant-tree ant-tree-icon-hide']>li:last-child>span:nth-child(2)>span>div"
+  # 新建子素材组断言
+  tree_new_sub_group_assert: "[class='_mai-F undefined ant-breadcrumb']>span:nth-child(3)>span:nth-child(1)>a"
+  # 编辑素材组断言
+  tree_edit_group_assert: "[class='ant-tree ant-tree-icon-hide']>li:last-child>span:nth-child(2)>span>div>div>div:nth-child(2)"
+  # 订阅素材组成功断言
+  tree_subscribe_group_assert: "text=订阅成功，每周三10:00将邮件通知更新"
+  # 取消订阅素材组成功断言
+  tree_cancel_subscribe_assert: "body > div.tz-message.type-success.visible > div > span"
+  # 成功收藏素材组断言
+  tree_collect_assert: "text=你已成功收藏该素材组"
+  # 取消收藏素材组断言
+  tree_cancel_collect_assert: "text=你已取消收藏该素材组"
+  # 空素材组分享断言
+  tree_blank_group_share_assert: "[class='ant-modal-title']"
+  # 分享素材组-创建链接
+  tree_create_share_link: "[class='tui-input-wrap with-suffix disabled']>div>button"
+  # 分享素材组成功断言
+  tree_share_assert: "text=链接创建并复制成功，快去分享吧～"
+  # 第一个素材组-分享素材组
+  tree_first_group_share: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(6)>button"
+  # 下载button
+  tree_download_button: "[class='ant-dropdown-menu-submenu-title']>button"
+  # 下载素材
+  tree_download_asset: "[id='download-8$Menu']>li:nth-child(1)>button"
+  # 下载空素材组断言
+  tree_download_blank_assert: "text=当前选中了0个素材，请重新选择"
+  # 下载素材组断言
+  tree_download_assert: "text=等待过程中您可以打开新窗口继续工作"
+  # 删除素材组-删除取消
+  tree_delete_cancel: "[class='foot-action action-cancel']"
+  # 删除素材组-删除确认
+  tree_delete_confirm: "[class='foot-action action-ok type-danger']"
+  # 删除素材组成功toast提示
+  tree_delete_toast: "[class='tz-message type-success visible']>div>span"
+
+# 上传页面
+UploadAssetPage:
+  # 素材库上传button
+  asset_upload_button: "[test-id='ACTION_BAR_ADD_MATERIALS']"
+  # 上传文件input
+  asset_upload_input: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(1)>div>input"
+  # 上传文件button
+  asset_upload_file_button: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(1)>div>button"
+  # 上传文件夹input
+  asset_upload_folder_input: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(2)>div>input"
+  # 上传文件夹button
+  asset_upload_folder_button: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(2)>div>button"
+  # 百度盘导入
+  asset_baidu_transfer: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(3)>button"
+  # Muse导入
+  asset_muse_transfer: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(4)>button"
+  # 导入网页
+  asset_import_url: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(6)>button"
+  # 导入网页输入框input 1 第一行
+  asset_import_url_input1: "[class='_eOJg5']>div:nth-child(1)>input"
+  # 导入网页输入框input 2 第二行
+  asset_import_url_input2: "[class='_eOJg5']>div:nth-child(2)>input"
+  # 导入网页-查看支持的链接
+  asset_check_support_url: "text=查看支持的链接"
+  # 导入网页取消button
+  asset_import_url_cancel: "text=取消"
+  # 导入网页确认button
+  asset_import_url_confirm: "text=确认"
+  # 不可点击的确认按钮，用于断言
+  asset_import_url_confirm_disable: "[class='tz-btn _3w-+K type-primary shape-round disabled']"
+  # 导入网页清空内容button
+  asset_import_url_clear: "text=清空内容"
+  # 导入网页-无效链接的无效格式提示
+  asset_import_invalid_format: "text=(无效格式)"
+  # 导入网页-过滤无效链接数量断言
+  asset_filter_invalid_url_assert: "[class='status_completed_title']>span"
+  # 新建纯文本
+  asset_new_text: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(7)>button"
+  # 新建纯文本-取消
+  asset_new_text_cancel: "text=取消"
+  # 新建纯文本-输入框
+  asset_new_text_input: "[placeholder='请输入正文']"
+  # 新建纯文本-清空内容
+  asset_new_text_clear: "text=清空内容"
+  # 新建纯文本-保存并入库
+  asset_new_text_save: "text=保存并入库"
+  # 新建文章
+  asset_new_article: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(8)>button"
+  # 新建文章-取消
+  asset_new_article_cancel: "[class='ant-modal tui-modal modal-fixed-close-btn full layout-filled']>div:nth-child(2)>div>div>div:nth-child(1)>div:nth-child(2)>button:nth-child(1)"
+  # 新建文章-保存并入库
+  asset_new_article_save: "text=保存并入库"
+  # 新建文章-文字输入iframe
+  asset_new_article_iframe: "iframe[id='iframe-content-center']"
+  # 新建文章-iframe文本输入框
+  asset_new_article_iframe_input: "text=在这里直接输入或粘贴内容"
+  # 新建文章-iframe 样式-第一个样式
+  asset_new_article_iframe_style: "text=感恩母亲节 深色预览 收藏 >> div"
+  # 新建组合
+  asset_new_combination: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(9)>button"
+  # 新建组合-取消
+  asset_new_combination_cancel: "text=取消"
+  # 标题命名
+  asset_title_name: "[class='anticon edit-icon']"
+  # 标题输入框
+  asset_title_input: "text=标题：未命名 >> input[type=\"text\"]"
+  # 添加内容
+  asset_add_content: "text=添加内容"
+  # 素材选择器iframe
+  material_selector_iframe: "iframe[id='iframe']"
+  # 从素材库添加
+  asset_add_from_assets: "text=从素材库添加"
+  # 从本地上传
+  asset_upload_from_pc: "text=从本地上传"
+  # 添加文本
+  asset_add_text: "text=添加文本"
+  # 关闭素材选择器
+  asset_selector_close: "[id='material-selector']>div:nth-child(1)>div:nth-child(2)>i"
+  # 搜索框
+  asset_selector_search_input: "[id='material-selector']>div:nth-child(1)>div:nth-child(2)>div>input"
+  # 搜索结果面包屑
+  asset_search_result: "[id='material-selector']>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>span:nth-child(2)>span:nth-child(1)"
+  # 素材选中checkbox
+  asset_card: "[id='material-selector-content']>div:nth-child(1)>div:nth-child(1)>div>div>div:nth-child(1)>i"
+  # 素材预览
+  asset_selector_preview: "[id='material-selector-content']>div:nth-child(1)>div:nth-child(1)>div>div>div:nth-child(3)>i"
+  # 关闭预览
+  asset_close_preview: "[class='ant-modal-close-x']"
+  # 筛选-类型：图片，视频
+  asset_filter_type: "text=类型:图片，视频"
+  # 可选-图片
+  asset_selected_pic: "[class='ant-badge-count-status-success ant-badge']>button"
+  # 可选-图片-count
+  asset_selected_pic_count: "[class='ant-badge-count-status-success ant-badge']>sup"
+  # 清空选择
+  asset_selector_clear: "text=清空选择"
+  # 确认button
+  asset_combination_confirm: "text=确定"
+  # 保存并入库
+  asset_combination_save: "text=保存并入库"
+  # 本地上传-添加
+  asset_upload_from_pc_add: "//*[@class='tz-btn type-neutral shape-round']/../button[2]"
+  # 纯文本-文本输入框
+  asset_text_area: "[placeholder=请输入正文]"
+  # 纯文本-保存
+  asset_text_save: ":nth-match(:text(\"保存\"), 2)"
+
+
+
+
+
+
+
+
+
+  # 样式-搜索输入框
+  asset_article_search_input: "[placeholder=输入样式标题、标签]"
+  # 素材库
+  asset_article_asset: "[class='edui-editor-toolbarboxinner edui-default']>div:nth-child(3)>div:nth-child(1)>div"
+  # 素材库第一个素材
+  asset_article_first: "[class='material-selector-tab-content material-selector-tab-list']>div>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>div"
+  # 确认按钮
+  asset_article_confirm: "[class='tz-btn ml-24 type-primary shape-round']"
+  # 上传重名素材提示弹窗-为后续所有冲突执行此操作
+  asset_upload_repeat_title: "text=为后续所有冲突执行此操作"
+  # 为后续所有冲突执行此操作checkbox
+  asset_follow_up_checkbox: "[class='batch_action mt-32']>label>span:nth-child(1)>input"
+  # 替换原文件button
+  asset_replace_original_file: "text=替换原文件"
+  # 单个素材后面的删除button
+  asset_delete_single_file: "[class='_FbRRR']"
+  # 单个素材后面的删除-二次确认弹窗-取消删除
+  asset_delete_single_file_cancel: "[class='tz-btn mr-8 type-neutral shape-round size-small ghost-reverse']"
+  # 单个素材后面的删除-二次确认弹窗-确认删除
+  asset_delete_single_file_confirm: "[class='tz-btn mr-20 type-danger shape-round size-small']"
+  # 全部删除button
+  asset_delete_all: "[class='status_completed_delete_btn']"
+  # 稍后处理button
+  asset_deal_later_1: "[class='status_completed_wait_btn']"
+  # 立即入库
+  asset_ingest_now_1: "[class='status_completed_immediately_btn']"
+  # 收起上传弹窗
+  asset_fold_upload_window: "[class='anticon _fDZTJ']"
+  # 收起弹窗断言
+  asset_fold_assert: "[class='fz-16 fw-500 ml-5']"
+  # 查看详情
+  asset_show_detail: "text=查看详情"
+  # 稍后处理
+  asset_deal_later_2: "[class='tz-btn type-neutral shape-round']"
+  # 收起弹窗-立即入库
+  asset_ingest_now_2: "[class='tz-btn ml-10 type-primary shape-round']"
+  # 知道了button
+  asset_got_it: "[class='tz-btn type-primary shape-round size-small']"
+  # 打标页面-删除所选
+  asset_delete_selected: "[class='tz-btn mr-8 type-neutral shape-round size-small']"
+  # 打标页面-删除-确认删除
+  asset_delete_confirm: "[class='tz-btn mr-20 type-danger shape-round size-small']"
+  # 打标页面-删除-取消删除
+  asset_delete_cancel: "[class='tz-btn mr-8 type-neutral shape-round size-small ghost-reverse']"
+  # 删除成功toast断言提示
+  asset_delete_toast_assert: "text=删除成功"
+  # 操作-删除单个素材
+  asset_delete_single: "[class='tz-btn color-text-light type-primary shape-round ghost-text']"
+  # 重命名所选
+  asset_rename_selected: "[class='tz-btn type-primary shape-round size-small']"
+  # 全选checkbox
+  asset_all_checkbox: "[class='_SX6g3']>div:first-child>label>span>input"
+  # 前缀输入框
+  asset_prefix_input: "[placeholder='请输入前缀']"
+  # 后缀-开始数字
+  asset_suffix_num: "[placeholder='请输入后缀开始数字']"
+  # 批量重命名-确认
+  asset_rename_confirm: "[class='text-right mt-104 mb-24']>button:nth-child(2)"
+  # 打标弹窗-第一个素材的名称
+  asset_first_name: "[class='edit-value']"
+  # 素材名称后的编辑button
+  asset_name_edit: "[class='anticon edit-icon']"
+  # 编辑单个素材名称输入框
+  asset_name_edit_span: "text=UI自动化测试7--已重复jpg80.38KB 删除 >> input[type=\"text\"]"
+  # 编辑单个素材名称后断言
+  asset_name_edit_assert: "[class='edit-value']"
+  # 素材预览弹窗关闭button
+  asset_single_detail_close: "[class='menu-icon-close']"
+  # 上传弹窗-全部暂停/继续button
+  asset_upload_stop: "[class='status_uploading_common_btn puase_all_btn']"
+  # 上传弹簧-上传暂停断言
+  asset_upload_stop_assert: "[class='status_load_title']"
+  # 上传弹窗-全部取消按钮
+  asset_upload_cancel: "[class='status_uploading_common_btn cancel_all_btn']"
+  # 上传弹窗-取消上传确认button
+  asset_upload_cancel_confirm: "[class='tz-btn mr-20 type-danger shape-round size-small']"
+  # 上传弹窗-单个素材暂停上传
+  asset_upload_stop_single: "[class='anticon _pi8CS']"
+  # 上传弹窗-单个素材重试继续上传
+  asset_upload_retry_single: "[class='_aMQN7']"
+  # 单个素材取消上传button
+  asset_upload_cancel_single: "[class='anticon _soGMJ']"
+  # 上传弹窗收起button
+  asset_upload_fold: "[class='anticon _fDZTJ']"
+  # 上传弹窗展开button
+  asset_upload_expand: "[class='_2lyB9']"
+  # 上传弹窗收起展开断言
+  asset_upload_expand_assert: "[class='_sXKo5']"
+  # 详情页权限组件
+  asset_auth_selected: ".mt-4 div div .tui-select-wrap .ant-select-show-arrow .ant-select-selection .ant-select-selection__rendered"
+  # 个人管理素材
+  asset_personal_asset: "text=个人管理素材"
+  # 入库所选
+  asset_ingest_checked: "[class='tz-btn type-primary shape-round']"
+  # 入库成功toast message
+  asset_upload_successful_toast: "[class='message-text']"
+  # 打标-加入素材组-添加button
+  asset_tag_into_group: "[class='_s5Wsz']"
+  # 打标-加入素材组-全部
+  asset_tag_into_group_all: "[id='tree-item--1']>div"
+  # 打标-加入素材组-全部-toast
+  asset_tag_into_group_all_toast: "text=素材组首页不允许入库文件"
+  # 打标-加入素材组-第一个素材组
+  asset_tag_into_first_group: "[class='ant-tree-child-tree ant-tree-child-tree-open']>li:nth-child(1)>span:nth-child(2)>span>span>div>div"
+  # 打标-添加素材组断言
+  asset_tag_into_first_group_assert: "[class='_s5Wsz']>span"
+  # 打标-加入素材组-清除素材组
+  asset_tag_clear_group: "[class='_okP5B']>div:nth-child(1)>i:nth-child(3)"
+  # 描述输入框
+  asset_tag_description_input: "[test-id='CORE_DESCRIPTION']"
+  # 下拉框多选tag组件
+  asset_multi_choice_tag: "text=请选择自动化测试下拉框多选tag（勿删）"
+  # 清空组件内容icon
+  asset_multi_tag_clear: "[class='ant-select-clear']"
+  # 多选tag断言
+  asset_multi_choice_tag_assert: "[class='ant-select-selection-item-content']"
+  # 多层级节点下拉框组件
+  asset_tag_multi_level_dropdown: "text=请选择自动化测试多层级节点（勿删）"
+  # 多层级节点下拉选项展开icon
+  asset_tag_multi_level_expand: "[class='ant-tree-treenode-switcher-open']>span:nth-child(1)"
+  # 多层级节点下拉选项checkbox
+  asset_tag_multi_level_checkbox: "[class='ant-tree-checkbox-inner']"
+  # 多层级节点选中断言
+  asset_tag_multi_level_assert: "[class='ant-select-selection__choice__content']"
+  # 树形下拉框
+  asset_tag_tree_dropdown: "text=请选择自动化测试树形字段（勿删）"
+  # 树形组件展开icon
+  asset_tag_tree_dropdown_expand: "#rc-tree-select-list_1 span"
+  # 选项checkbox
+  asset_tag_tree_options: "ul[role='group'] li[role='treeitem'] >> :nth-match(span, 3)"
+  # 树形组件断言
+  asset_tag_tree_assert: "[class='ant-select-selection__choice__content']"
+ # 达人/明星 下拉框组件
+  asset_tag_star_dropdown: "text=请选择达人/明星"
+ # 有效期规则选项
+  asset_tag_star_option: "text=杨伦-UI自动化"
+  # 有效期规则断言
+  asset_tag_star_assert: "[class='mb-10']>div:nth-child(1)"
+  # 附件上传input
+  asset_attach_file_input: "[class='uploader']>div:nth-child(1)>div:nth-child(2)"
+  # 附件预览button
+  asset_attach_file_preview: "[class='flex-shrink-0 btn-group-line']>button:nth-child(1)"
+  # 附件设为预览版本
+  asset_attach_file_set_preview: "[class='flex-shrink-0 btn-group-line']>button:nth-child(3)"
+  # 附件删除
+  asset_attach_file_delete: "[class='flex-shrink-0 btn-group-line']>button:nth-child(4)"
+  # 附件预览断言
+  asset_attach_file_preview_assert: "[class='tz-preview-image']"
+  # 素材列表-进入一个素材详情页
+  asset_tag_asset_detail: "[class='ant-row']>div:nth-child(1)>div>div>div:nth-child(4)"
+  # 附件预览断言
+  asset_set_preview_assert: "[class='ant-alert-message']"
+  # 水印-启用radio
+  asset_tag_watermark_open: "[class='ant-collapse-item ant-collapse-item-active ant-collapse-item-disabled ant-collapse-no-arrow']>div:nth-child(2)>div>div:nth-child(11)>div>div:nth-child(2)>div>div>label:nth-child(1)>span>input"
+  # 水印有效期组件
+  asset_watermark_validity_period: "[placeholder=请选择日期]"
+  # 时间日期组件，起始日期
+  asset_start_date: "[class='ant-calendar-range-part ant-calendar-range-left']>div:nth-child(2)>div:nth-child(2)>table >> text=1"
+  # 时间日期组件，截止日期
+  asset_end_date: "[class='ant-calendar-range-part ant-calendar-range-right']>div:nth-child(2)>div:nth-child(2)>table >> text = 20"
+  # 水印模版dropdown
+  asset_watermark_template: "text=请选择水印模板"
+  # 模版选项
+  asset_watermark_template_option: "text=租户默认文案+用户邮箱"
+  # 前端水印断言
+  asset_watermark_assert: "[class='tz-preview-file-wrap']>div:nth-child(3)"
+  # 有效期规则不同步radio
+  out_of_sync_radio: "[class='ant-collapse-item ant-collapse-item-active ant-collapse-item-disabled ant-collapse-no-arrow']>div:nth-child(2)>div>div:nth-child(8)>div>div>div:nth-child(2)>div>div>label:nth-child(2)>span>input"
+  # 素材发布日组件
+  asset_tag_release_dropdown: "[placeholder=请选择素材发布日期]"
+  # 素材发布日时间
+  asset_tag_release_date: "table[role='grid']>tbody>tr:last-child>td:first-child"
+  # 未生效素材断言
+  asset_release_assert: "[class='ant-alert-message']"
+  # 素材失效日组件
+  asset_tag_expired: "[placeholder=请选择失效日期]"
+  # 选择素材失效日
+  asset_tag_expired_date: "table[role='grid']>tbody>tr:first-child>td:last-child"
+
+
+# 用户动态
+LogHistoryPage:
+  # 用户动态-搜索
+  log_history_search_input: "[class='ant-select ant-select-enabled ant-select-allow-clear ant-select-no-arrow']>div>div"
+  log_history_input_user: "text=芮茵"
+  # 用户动态-大标题
+  log_history_title: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)"
+  # 搜索结果展示的用户名称元素获取
+  log_history_search_user: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(1)>div:nth-child(1)>div>div:nth-child(1)>div>span:nth-child(1)"
+  # 按模块筛选
+  log_modular_sort: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)"
+  log_modular_text: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div>span"
+  # 模块: 上传、入库、下载、编辑、分享、删除、创建
+  log_modular_upload: "[class='check-list']>div:nth-child(1)>div>label>span:nth-child(2)"
+  log_modular_put_in: "[class='check-list']>div:nth-child(2)>div>label>span:nth-child(2)"
+  log_modular_download: "[class='check-list']>div:nth-child(3)>div>label>span:nth-child(2)"
+  log_modular_edit: "[class='check-list']>div:nth-child(4)>div>label>span:nth-child(2)"
+  log_modular_share: "[class='check-list']>div:nth-child(5)>div>label>span:nth-child(2)"
+  log_modular_delete: "[class='check-list']>div:nth-child(6)>div>label>span:nth-child(2)"
+  log_modular_create: "[class='check-list']>div:nth-child(7)>div>label>span:nth-child(2)"
+  # 按时间范围筛选
+  log_time_sort: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)"
+  log_time_text: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(1)>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>div>span"
+  # 时间范围：今天、最近7天、本月、上月
+  log_time_today: "[class='ant-radio-group ant-radio-group-outline layout-rows']>label:nth-child(1)>span:nth-child(2)"
+  log_time_recent7: "[class='ant-radio-group ant-radio-group-outline layout-rows']>label:nth-child(2)>span:nth-child(2)"
+  log_time_this_moth: "[class='ant-radio-group ant-radio-group-outline layout-rows']>label:nth-child(3)>span:nth-child(2)"
+  log_time_last_moth: "[class='ant-radio-group ant-radio-group-outline layout-rows']>label:nth-child(4)>span:nth-child(2)"
+
+
+# 权限申请页面
+ApplyForAccessPage:
+  # 异常处理-多次进入url页面没加载出来
+  access_error_url: "text=全部素材"
+  # 素材库上传button
+  access_upload_button: "[test-id='ACTION_BAR_ADD_MATERIALS']"
+  # 上传文件input
+  access_upload_input: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(1)>div>input"
+  # 上传文件button
+  access_upload_file_button: "[class='ant-menu _ff5VZ ant-dropdown-menu ant-menu-light ant-menu-root ant-menu-vertical']>li:nth-child(1)>div>button"
+  # 立即入库
+  access_ingest_now: "[class='status_completed_immediately_btn']"
+  # 上传重名素材提示弹窗-为后续所有冲突执行此操作
+  access_upload_repeat_title: "text=为后续所有冲突执行此操作"
+  # 详情页权限组件
+  access_auth_selected: ".mt-4 div div .tui-select-wrap .ant-select-show-arrow .ant-select-selection .ant-select-selection__rendered"
+  # 个人管理素材
+  access_personal_asset: "text=个人管理素材"
+  # 为后续所有冲突执行此操作checkbox
+  access_follow_up_checkbox: "[class='batch_action mt-32']>label>span:nth-child(1)>input"
+  # 替换原文件button
+  access_replace_original_file: "text=替换原文件"
+  # 素材可见范围-添加成员button
+  access_add_staff: "[id='content-container']>div>div:nth-child(2)>div:nth-child(2)>div>div>div>div>div:nth-child(2)>div>div:nth-child(3)>button"
+  # 可见范围弹窗搜索框
+  access_search_input: "input[placeholder='请输入信息搜索成员或部门']"
+  # 搜索后成员checkbox
+  access_search_result_checkbox: "[class='_gpaS4']>label>span>input"
+  # 确认button
+  access_confirm_button: "[class='footer-inner']>button:nth-child(3)"
+  # 入库所选
+  access_ingest_checked: "[class='tz-btn type-primary shape-round']"
+  # 入库成功toast message
+  access_upload_successful_toast: "[class='message-text']"
+  # 进入素材详情页
+  access_asset_detail: "[class='ant-row']>div:nth-child(1)>div>div>div:nth-child(4)"
+  # 申请下载权限按钮
+  access_apply_download: "text=申请下载权限"
+  # 申请编辑权限按钮
+  access_apply_edit: "text=申请编辑权限"
+  # 权限申请目的及用途输入框
+  access_apply_textarea: "[id='applyReason']"
+  # 申请权限button
+  access_apply_confirm: "text=申请权限"
+  # 输入框空输入断言提示
+  access_apply_blank_text: "[class='ant-form-explain']"
+  # 我知道了button
+  access_i_know: "text=我知道了"
+  # 权限申请成功断言
+  access_apply_assert: "text=提交成功"
+  # 小铃铛
+  access_bell_notification: "[class='material-badge-content']"
+  # 待办tab
+  access_to_do_tab: "[class='ant-tabs-tab-active ant-tabs-tab']"
+  # 全部通知tab
+  access_all_notification_tab: "[class='ant-tabs-tab-active ant-tabs-tab']"
+  # 跳转权限审批页面
+  access_go_approval_page: "[class='material-badge-wrap-list']>div:nth-child(1)>li>div:nth-child(2)>div:nth-child(1)"
+  # 拒绝申请button
+  access_reject_button: "[class='tz-btn type-danger shape-round ghost-reverse']"
+  # 通过申请button
+  access_pass_button: "[class='tz-btn ml-16 type-primary shape-round']"
+  # 拒绝申请弹窗理由输入框
+  access_reject_reason_input: "[placeholder='请输入拒绝理由（选填）']"
+  # 确认拒绝button
+  access_reject_confirm: "[class='tz-btn type-primary shape-round']"
+  # 拒绝申请toast提示断言
+  access_reject_toast: "text=已拒绝此次申请"
+  # 拒绝理由span
+  access_reject_reason_assert: "[class='ant-alert-message']"
+  # 通过权限申请二次弹窗确认button
+  access_pass_second_confirm: "[class='tz-btn type-primary shape-round']"
+  # 通过申请toast提示断言
+  access_pass_toast: "text=已通过此次申请"
+  # 下载素材button
+  access_download_button: "[class='ant-btn ant-btn-primary']"
+  # 编辑素材button
+  access_edit_button: "[class='tz-btn type-primary shape-square ghost-solid icon-button']"
+  # 素材卡片checkbox
+  access_asset_list_checkbox: "[class='ant-row']>div:nth-child(1)>div>div>div:nth-child(1)"
+  # 批量操作-下载button
+  access_batch_download: "[class='cache-route']>div>div:nth-child(2)>div>div:nth-child(1)"
+  # 批量操作-下载素材button
+  access_batch_download_asset: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(1)>button:nth-child(1)"
+  # 批量操作-编辑button
+  access_batch_edit_asset: "[class='cache-route']>div>div:nth-child(2)>div>div:nth-child(4)"
+  # 批量操作-申请权限button
+  access_batch_apply: "[class='tz-btn type-neutral shape-round size-small']"
+  # 权限申请弹窗-申请目的输入框
+  access_apply_reason_textarea: "[placeholder='*请输入您所属的部门以及【申请权限的目的和用途】']"
+  # 批量操作-申请权限取消button
+  access_batch_apply_cancel: "//*[@class='ant-modal-header']/../div[2]/div/div[2]/button[1]"
+  # 提交申请button
+  access_apply_commit: "text=提交申请"
+  # 空提交断言
+  access_blank_apply: "[class='color-danger mt-12']"
+  # 下载申请成功toast提示
+  access_apply_success: "text=申请已提交成功，审核结果会通过邮件发送给你"
+  # 批量操作-编辑操作-申请权限button
+  access_batch_edit_apply: "[class='tz-btn type-primary shape-round ghost-reverse']"
+  # 批量操作-编辑操作-我知道了button
+  access_batch_edit_know: "[class='tz-btn ml-16 type-primary shape-round']"
+  # 批量操作-申请编辑权限-提交申请
+  access_batch_edit_commit: "[class='tz-btn type-primary shape-round']"
+  # 批量操作-申请编辑权限-空提交断言
+  access_batch_edit_commit_blank: "[class='color-danger mt-12']"
+  # 编辑权限申请成功提示断言
+  access_apply_success_assert: "text=提交成功"
+
+# 统计
+DashboardPage:
+  # 素材使用的tab
+  dashboard_use: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(1)>div:nth-child(1)>div>div>div>div>div:nth-child(1)>div:nth-child(1)"
+  # 数据总览
+  asset_user_title: "[class='title title-active']>span:nth-child(2)"
+  # 素材排行的tab
+  asset_ranking: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(1)>div:nth-child(1)>div>div>div>div>div:nth-child(1)>div:nth-child(2)"
+  # 素材分类排行榜
+  asset_ranking_title: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(2)>div>div:nth-child(1)>div>div:nth-child(1)>div"
+  # 用户排行的tab
+  user_ranking: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(1)>div:nth-child(1)>div>div>div>div>div:nth-child(1)>div:nth-child(3)"
+  # 用户分类排行榜
+  user_ranking_title: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(2)>div>div:nth-child(1)>div>div:nth-child(1)>div"
+  # 导出列表的tab
+  export_list: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(1)>div:nth-child(1)>div>div>div>div>div:nth-child(1)>div:nth-child(7)"
+  # 导出历史
+  export_list_title: "[id='root']>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div:nth-child(2)>div>div>div:nth-child(1)>h3"
+
+
+
+# 下载页面
+DownloadPage:
+  # 进入素材组内
+  download_enter_group: "[class='ant-row']>div:nth-child(1)>div>div:nth-child(2)"
+  # 树结构-第一个素材组热区
+  download_tree_enter_group: "[class='ant-tree ant-tree-icon-hide']>li:nth-child(1)>span:nth-child(2)>span>div"
+  # 右键-下拉热区
+  download_tree_right_dropdown: "[class='ant-tree ant-tree-icon-hide']>li:last-child>span:nth-child(2)>span>div>div:nth-child(2)>div>i"
+  # 下载button
+  download_tree_download_button: "[class='ant-dropdown-menu-submenu-title']>button"
+  # 下载素材
+  download_tree_download_asset: "[id='download-8$Menu']>li:nth-child(1)>button"
+  # 下载素材及附件
+  download_tree_download_all: "[id='download-8$Menu']>li:nth-child(2)>button"
+  # 下载空素材组断言
+  tree_download_blank_assert: "text=当前选中了0个素材，请重新选择"
+  # 下载素材组断言
+  tree_download_assert: "text=等待过程中您可以打开新窗口继续工作"
+  # 进入第一个素材组的子组热区
+  tree_enter_sub_group: "[class='ant-tree-child-tree ant-tree-child-tree-open']>li:nth-child(1)>span:nth-child(2)>span>div>div:nth-child(1)"
+  # 申请权限
+  download_apply_access: "[class='tz-btn type-neutral shape-round size-small']"
+  # 权限申请弹窗-申请目的输入框
+  download_apply_reason_textarea: "[placeholder='*请输入您所属的部门以及【申请权限的目的和用途】']"
+  # 提交申请button
+  download_apply_commit: "[class='tz-btn _nRtAj type-primary shape-round']"
+  # 下载申请成功toast提示
+  download_apply_success: "text=申请已提交成功，审核结果会通过邮件发送给你"
+  # 取消下载button
+  download_cancel: "[class='tz-btn _DenXk type-neutral shape-round']"
+  # 下载button
+  download_button: "[class='tz-btn type-primary shape-round']"
+  # 未生效素材checkbox 一并下载
+  download_not_active_checkbox: "//*[@class='_M7z2h']/../label/span[1]/input"
+  # 不可下载tips
+  download_can_not_tips: "[class='_rnm9o']>div:last-child>div:nth-child(3)"
+  # ... 更多
+  download_more: "[class='anticon anticon-icon-more _DNPcn ant-dropdown-trigger undefined _BwHXf']"
+  # 下载button
+  download_more_download: "[class='ant-dropdown-menu-submenu-title']>button"
+  # 下载素材
+  download_more_download_asset: "[id='download-2$Menu'] > li:nth-child(1) > button"
+  # 下载素材及附件
+  download_more_download_all: "[id='download-2$Menu'] > li:nth-child(2) > button"
+  # 批量操作-全选
+  download_all_checkbox: "input[class='ant-checkbox-input']"
+  # 批量操作-下载下拉dropdown
+  download_dropdown: "[id=root]>div:nth-child(1)>div:nth-child(2)>div:nth-child(4)>div>div>div:nth-child(2)>div>div:nth-child(1)"
+  # 批量操作-下载button
+  download_batch_button: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(1)>button"
+  # 批量操作-下载附件button
+  download_batch_all_button: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(2)>button"
+  # 批量操作-下载附件指定尺寸和大小
+  download_specify_size: "[class='ant-dropdown-menu ant-dropdown-menu-light ant-dropdown-menu-root ant-dropdown-menu-vertical']>li:nth-child(3)>button"
+  # 批量操作-下载指定大小输入框
+  download_specify_size_input: "[placeholder=\"最大不能超过 10240KB\"]"
+  # 等比缩放尺寸开关
+  download_zoom_switch_button: "button[role=\"switch\"]"
+  # 按宽缩放输入框
+  download_zoom_base_length: "[placeholder=\"请输入小于等于3120的整数\"]"
+  # 批量操作-下载指定大小-下载button
+  download_specify_button: "[class='tz-btn type-primary shape-round']"
+  # 定位空素材组
+  download_blank_group: "[class='_8p1eW']>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>div"
+  # 框选空素材组
+  download_blank_group_checkbox: "[class='_8p1eW']>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(2)>div>div>i"
+  # 下载空素材组断言
+  download_blank_toast: "text=当前选中了0个素材，请重新选择"
+  # 定位子素材组
+  download_sub_group: "[class='_8p1eW']>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(1)>div"
+  # 框选子素材组
+  download_sub_group_checkbox: "[class='_8p1eW']>div:nth-child(2)>div:nth-child(2)>div:nth-child(1)>div>div:nth-child(1)>div>div>i"
+  # 定位单个素材
+  download_single_asset: "[class='_8p1eW']>div:nth-child(3)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div"
+  # 框选单个素材
+  download_single_asset_checkbox: "[class='_8p1eW']>div:nth-child(3)>div:nth-child(2)>div:nth-child(1)>div:nth-child(1)>div>div>div>i"
+  # 筛选-创建者/创建部门 dropdown
+  download_mycreated_dropdown: "[class='_6tvLT']>div:nth-child(2)>div"
+  # 筛选-我创建的素材checkbox
+  download_mycreated_checkbox: "[class='_dSgEE']>label>span:nth-child(1)>input"
+  # 素材列表全选checkbox
+  download_list_all_checkbox: "[class='_tXa8R ant-checkbox-wrapper']>span:nth-child(1)>input"
+  # 素材列表-定位正常素材
+  download_list_normal_asset: "[class='_0B78P']>div:nth-child(2)>div:nth-child(1)>div>div"
+  # 素材列表-定位纯文本/url/文章素材
+  download_list_url_asset: "[class='_0B78P']>div:nth-child(2)>div:nth-child(4)>div>div"
+  # 素材列表-定位未生效素材
+  download_list_not_active_asset: "#exposure-content-153245612 > div > div._31O1-"
+  # 素材列表右键-下载素材
+  download_list_right_button: "[class='ant-dropdown-menu ant-dropdown-menu-sub ant-dropdown-menu-hidden ant-dropdown-menu-vertical']>li:nth-child(1)>button"
+  # 素材卡片-右键下载
+  download_card_right: "[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(4)>div>button"
+  # 未生效素材卡片-右键下载
+
+# 公共页面
+CommonDamPage:
+  # 全部下新建素材
+  common_new_group: "[class='tz-btn _sAtYC type-primary shape-round']"
+  # 组名输入框
+  common_name_input: "[id='groupName']"
+  # 描述输入框
+  common_description_input: "[id='description']"
+  # 取消新建素材组按钮
+  common_new_cancel: "[class='tz-btn type-neutral shape-round ghost-text']"
+  # 确认新建素材组按钮
+  common_new_confirm: "[class='tz-btn ml-20 type-primary shape-round']"
+
+
+

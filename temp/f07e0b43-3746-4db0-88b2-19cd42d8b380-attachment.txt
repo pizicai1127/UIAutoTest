@@ -1,0 +1,4 @@
+INFO     common.logger:basepage.py:55 hover页面元素：[class='ant-row']>div:nth-child(1)>div>div>div:nth-child(4)
+INFO     common.logger:basepage.py:30 点击页面元素[class='ant-row']>div>div>div>div:nth-child(3)>div
+INFO     common.logger:basepage.py:55 hover页面元素：[class='ant-dropdown ant-dropdown-placement-bottomLeft']>ul>li:nth-child(4)>div>button
+INFO     common.logger:basepage.py:30 点击页面元素[class='ant-dropdown-menu ant-dropdown-menu-sub ant-dropdown-menu-vertical']>li:nth-child(1)>button

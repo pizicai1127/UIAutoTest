@@ -1,0 +1,199 @@
+{
+  "ef52275b91e0efcc2b9096dfd2a013a2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "5c95e1bb4293c01",
+      "status" : "broken",
+      "statusDetails" : "playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[id='email']\"\n============================================================",
+      "time" : {
+        "start" : 1634814648281,
+        "stop" : 1634814679457,
+        "duration" : 31176
+      }
+    } ]
+  },
+  "b222ca1162177976a3aaf1b0f5c11cbd" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1533882ada3a083a",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 已成年",
+      "time" : {
+        "start" : 1634814562470,
+        "stop" : 1634814562470,
+        "duration" : 0
+      }
+    } ]
+  },
+  "167af3b0eb6cae34dc0db08236589a09" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "35b0fc8486b3e07f",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 无条件",
+      "time" : {
+        "start" : 1634814562467,
+        "stop" : 1634814562467,
+        "duration" : 0
+      }
+    } ]
+  },
+  "dfed0ca9de341eff899c6f0c5acb191c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bd67435af7324ad",
+      "status" : "broken",
+      "statusDetails" : "playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[class='input___RTOja']\"\n============================================================",
+      "time" : {
+        "start" : 1634814605141,
+        "stop" : 1634814644796,
+        "duration" : 39655
+      }
+    } ]
+  },
+  "1697ad0f4f5858d1f5799db1935c47d9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9666368d47e441e2",
+      "status" : "broken",
+      "statusDetails" : "playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[id='email']\"\n============================================================",
+      "time" : {
+        "start" : 1634814679819,
+        "stop" : 1634814712021,
+        "duration" : 32202
+      }
+    } ]
+  },
+  "353369850ffd0785cf4d49f984e71b35" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "463bcd1a0aaf7a95",
+      "status" : "broken",
+      "statusDetails" : "playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[class='input___RTOja']\"\n============================================================",
+      "time" : {
+        "start" : 1634814565096,
+        "stop" : 1634814604702,
+        "duration" : 39606
+      }
+    } ]
+  },
+  "9bd2e5d11e5f629af4264d592c87866d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7c1c4c82fc22de33",
+      "status" : "broken",
+      "statusDetails" : "playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[id='email']\"\n============================================================",
+      "time" : {
+        "start" : 1634814712585,
+        "stop" : 1634814744747,
+        "duration" : 32162
+      }
+    } ]
+  },
+  "90c00541552adb4e9734f95d02e1250d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "cb460dbfad93f6bd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634814562469,
+        "stop" : 1634814562469,
+        "duration" : 0
+      }
+    } ]
+  },
+  "dce530161fbaeae92e22e9d6f08c357d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "55ad6930a9f8ad7c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634814562466,
+        "stop" : 1634814562466,
+        "duration" : 0
+      }
+    } ]
+  },
+  "4e821d7a62c0cd6d20f6ddc7cc331353" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bc4c794592066a42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1634814645161,
+        "stop" : 1634814648005,
+        "duration" : 2844
+      }
+    } ]
+  }
+}

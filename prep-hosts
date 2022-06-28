@@ -1,0 +1,67 @@
+# 环境 tx uat hosts 配置
+# ------- 大平台 ----------------------
+152.136.184.217 service.tezign.com
+152.136.184.217 sop-service-stage.tezign.com
+152.136.184.217 tezign.com
+152.136.184.217 www.tezign.com
+152.136.184.217 m.tezign.com
+152.136.184.217 pro.tezign.com
+152.136.184.217 top.tezign.com
+152.136.184.217 job.tezign.com
+152.136.184.217 demo.tezign.com
+152.136.184.217 pocket.tezign.com
+152.136.184.217 id.tezign.com
+152.136.184.217 id-stage.tezign.com
+152.136.184.217 xxl-job-stage.tezign.com
+152.136.184.217 share-test.tezign.com
+152.136.184.217 share.tezign.com
+152.136.184.217 link.tezign.com
+152.136.184.217 creativesku.com
+
+# ------- 公共 ----------------------
+152.136.184.217 musetransfer.com
+152.136.184.217 art.musetransfer.com
+152.136.184.217 dam.musetransfer.com
+152.136.184.217 minidam.tezign.com
+152.136.184.217 kepler.tezign.com
+152.136.184.217 search.tezign.com
+152.136.184.217 search-go.tezign.com
+152.136.184.217 cs.tezign.com
+152.136.184.217 sop-vendors.tezign.com
+152.136.184.217 vms-cdn.tezign.com
+152.136.184.217 static-cdn.tezign.com
+152.136.184.217 open-api.tezign.com
+152.136.184.217 open-api-stage.tezign.com
+152.136.184.217 open-auth.tezign.com
+
+# ------- 数据智能 ----------------------
+152.136.184.217 itg-static.tezign.com
+152.136.184.217 vms-service.tezign.com
+# 配置了公网域名
+152.136.184.217 vms-stage-service.tezign.com
+
+# t1
+152.136.184.217 alipurchase.tezign.com
+# t1
+152.136.184.217 express.tezign.com
+
+# t1
+152.136.184.217 data-stage.tezign.com
+# t2
+152.136.184.217 asset-stage.tezign.com
+# t3
+152.136.184.217 puma-stage.tezign.com
+# t4
+152.136.184.217 shiseido-stage.tezign.com
+# t5
+152.136.184.217 xiaomi-stage.tezign.com
+# t6 配置了公网域名
+#152.136.184.217 ef-stage.tezign.com
+# t7 配置了公网域名
+#152.136.184.217 unilever-test.tezign.com
+# t8
+152.136.184.217 shuhegroup-test.tezign.com
+# t9
+152.136.184.217 mengniu-stage.tezign.com
+# t10
+152.136.184.217 unilever.tezign.com

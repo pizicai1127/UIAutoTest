@@ -1,0 +1,328 @@
+{
+  "uid" : "5c95e1bb4293c01",
+  "name" : "test_change_passwords[chromium-data0]",
+  "fullName" : "case.dynamic.test_login.TestChangePassword#test_change_passwords",
+  "historyId" : "ef52275b91e0efcc2b9096dfd2a013a2",
+  "time" : {
+    "start" : 1634814648281,
+    "stop" : 1634814679457,
+    "duration" : 31176
+  },
+  "description" : "测试  修改密码 -正常流程",
+  "descriptionHtml" : "<p>测试  修改密码 -正常流程</p>\n",
+  "status" : "broken",
+  "statusMessage" : "playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[id='email']\"\n============================================================",
+  "statusTrace" : "self = <case.dynamic.test_login.TestChangePassword object at 0x10f4832e0>\ndata = {'confirm_password': 'abcd1234', 'new_password': 'abcd1234', 'original_password': 'abcd1234', 'setting_url': 'https://fmcgdemo.tezign.com/base/account/setting'}\npage = <Page url='https://fmcgdemo.tezign.com/usr/login'>\n\n    @pytest.mark.p1\n    @pytest.mark.parametrize(\"data\", change_password_data)\n    def test_change_passwords(self, data, page: Page):\n        \"\"\"测试  修改密码 -正常流程\"\"\"\n    \n        login_page = LoginPage(page)\n        # 打开t202-生产\n        login_page.go_to_tenant(\"https://fmcgdemo.tezign.com/usr/login\")\n        # 进入登录流程\n>       login_page.home_login(\"wangcong@tezign.com\", \"abcd1234\")\n\ncase/dynamic/test_login.py:114: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/user/login.py:53: in home_login\n    self.page.fill(LoginPage.selectors['account'], account)\n../pythonProject2/venv/lib/python3.8/site-packages/playwright/sync_api/_generated.py:7282: in fill\n    self._sync(\n../pythonProject2/venv/lib/python3.8/site-packages/playwright/_impl/_sync_base.py:111: in _sync\n    return task.result()\n../pythonProject2/venv/lib/python3.8/site-packages/playwright/_impl/_page.py:653: in fill\n    return await self._main_frame.fill(**locals_to_params(locals()))\n../pythonProject2/venv/lib/python3.8/site-packages/playwright/_impl/_frame.py:476: in fill\n    await self._channel.send(\"fill\", locals_to_params(locals()))\n../pythonProject2/venv/lib/python3.8/site-packages/playwright/_impl/_connection.py:36: in send\n    return await self.inner_send(method, params, False)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <playwright._impl._connection.Channel object at 0x10f1915b0>\nmethod = 'fill'\nparams = {'selector': \"input[id='email']\", 'value': 'wangcong@tezign.com'}\nreturn_as_dict = False\n\n    async def inner_send(\n        self, method: str, params: Optional[Dict], return_as_dict: bool\n    ) -> Any:\n        if params is None:\n            params = {}\n        callback = self._connection._send_message_to_server(self._guid, method, params)\n    \n        done, pending = await asyncio.wait(\n            {self._connection._transport.on_error_future, callback.future},\n            return_when=asyncio.FIRST_COMPLETED,\n        )\n        if not callback.future.done():\n            callback.future.cancel()\n>       result = next(iter(done)).result()\nE       playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.\nE       =========================== logs ===========================\nE       waiting for selector \"input[id='email']\"\nE       ============================================================\n\n../pythonProject2/venv/lib/python3.8/site-packages/playwright/_impl/_connection.py:54: TimeoutError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "pytestconfig",
+    "time" : {
+      "start" : 1634814562466,
+      "stop" : 1634814562466,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1634814562466,
+      "stop" : 1634814562466,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "delete_output_dir",
+    "time" : {
+      "start" : 1634814562466,
+      "stop" : 1634814562466,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1634814562466,
+      "stop" : 1634814562466,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "playwright",
+    "time" : {
+      "start" : 1634814562471,
+      "stop" : 1634814562808,
+      "duration" : 337
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "browser_type_launch_args",
+    "time" : {
+      "start" : 1634814562471,
+      "stop" : 1634814562471,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "browser_type",
+    "time" : {
+      "start" : 1634814562809,
+      "stop" : 1634814562810,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1634814562810,
+      "stop" : 1634814564477,
+      "duration" : 1667
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "launch_browser",
+    "time" : {
+      "start" : 1634814562810,
+      "stop" : 1634814562810,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "device",
+    "time" : {
+      "start" : 1634814564477,
+      "stop" : 1634814564477,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "context",
+    "time" : {
+      "start" : 1634814648043,
+      "stop" : 1634814648047,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "browser_context_args",
+    "time" : {
+      "start" : 1634814648043,
+      "stop" : 1634814648043,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "page",
+    "time" : {
+      "start" : 1634814648047,
+      "stop" : 1634814648280,
+      "duration" : 233
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "page::0",
+    "time" : {
+      "start" : 1634814679570,
+      "stop" : 1634814679570,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "context::0",
+    "time" : {
+      "start" : 1634814679571,
+      "stop" : 1634814679597,
+      "duration" : 26
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1634814744890,
+      "stop" : 1634814745041,
+      "duration" : 151
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "playwright::0",
+    "time" : {
+      "start" : 1634814745042,
+      "stop" : 1634814745049,
+      "duration" : 7
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "p1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "case.dynamic"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestChangePassword"
+  }, {
+    "name" : "host",
+    "value" : "congdeMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "62372-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.dynamic.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser_name",
+    "value" : "'chromium'"
+  }, {
+    "name" : "data",
+    "value" : "{'setting_url': 'https://fmcgdemo.tezign.com/base/account/setting', 'original_password': 'abcd1234', 'new_password': 'abcd1234', 'confirm_password': 'abcd1234'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "p1" ]
+  },
+  "source" : "5c95e1bb4293c01.json",
+  "parameterValues" : [ "'chromium'", "{'setting_url': 'https://fmcgdemo.tezign.com/base/account/setting', 'original_password': 'abcd1234', 'new_password': 'abcd1234', 'confirm_password': 'abcd1234'}" ]
+}
